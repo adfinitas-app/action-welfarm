@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href='js/tel-input/build/css/intlTelInput.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:700,400' rel='stylesheet' type='text/css'>
+    <!-- Nimbus Sans (Helvetica equivalent) -->
+    <script src="https://use.typekit.net/mjn4vus.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script></script></script>
+    <meta property="og:url"           content="{{ site.url }}" />
+    <meta property="og:type"          content="Coupons court à la castration des porcelets" />
+    <meta property="og:title"         content="#COUIC2018" />
+    <meta property="og:description"   content="En France, 85% des porcelets mâles sont castrés sans anesthésie. Mettons fin à cette mutilation ! RDV sur www.couic2018.fr pour voir la vidéo et signer la pétition de WELFARM." />
+    <meta property="og:image"         content="{{ site.url }}/img/share.png" />
+    <meta name="google-site-verification" content="sYsZuLgkTJeoMXJ3EO0eCpC0mbugNfq04Urfyc7rPyU" />
+  </head>
+  <body onload="init();" style="background-color:#D4D4D4;margin:0px;">
+    {{ content }}
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/equalize.js"></script>
+    <script src="js/tel-input/build/js/intlTelInput.js"></script>
+    <!-- Animation code -->
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/cochon-v3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.cochonv3();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+      }
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
