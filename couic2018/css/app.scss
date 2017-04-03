@@ -58,17 +58,17 @@ input[type='checkbox'] {
     margin-bottom: 30px;
   }
   + label span {
-    background:url("/img/checkbox.png") right top no-repeat;
+    background:url("/couic2018/img/checkbox.png") right top no-repeat;
   }
   &:checked + label span {
-    background:url("/img/checkbox.png") 0px top no-repeat;
+    background:url("/couic2018/img/checkbox.png") 0px top no-repeat;
   }
   &.checkbox-black {
     + label span {
-      background:url("/img/checkbox-black.png") left top no-repeat;
+      background:url("/couic2018/img/checkbox-black.png") left top no-repeat;
     }
     &:checked + label span {
-      background:url("/img/checkbox-black.png") -30px top no-repeat;
+      background:url("/couic2018/img/checkbox-black.png") -30px top no-repeat;
     }
   }
 }
@@ -137,13 +137,13 @@ input[type='checkbox'] {
   }
   /* */
   &.arrow-black::after {
-    content: url('/img/arrow-black.png');
+    content: url('/couic2018/img/arrow-black.png');
   }
   &.arrow-grey::after {
-    content: url('/img/arrow-grey.png');
+    content: url('/couic2018/img/arrow-grey.png');
   }
   &.arrow-orange::after {
-    content: url('/img/arrow-orange.png');
+    content: url('/couic2018/img/arrow-orange.png');
   }
   /* Arrow for block */
   &.arrow-green {
@@ -151,7 +151,7 @@ input[type='checkbox'] {
     z-index: 1;
   }
   &.arrow-green::after {
-    content: url('/img/arrow-green.png');
+    content: url('/couic2018/img/arrow-green.png');
   }
 }
 .delimiter {
@@ -162,7 +162,7 @@ input[type='checkbox'] {
 
 .header {
   background-color: $black;
-  background-image: url("/img/header-background.png");
+  background-image: url("/couic2018/img/header-background.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   text-transform: uppercase;
@@ -444,7 +444,7 @@ input[type='checkbox'] {
 }
 .petition {
   background-color: $black;
-  background-image: url("/img/background-petition.png");
+  background-image: url("/couic2018/img/background-petition.png");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
