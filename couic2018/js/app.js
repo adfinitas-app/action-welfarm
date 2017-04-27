@@ -1,5 +1,5 @@
 var fbGlobal = new Firebase("https://welfarmpetitioncount.firebaseio.com");
-merciPath = "/merci.html"
+merciPath = "./merci.html"
 
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
