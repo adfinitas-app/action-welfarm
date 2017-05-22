@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Newsletter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css' />
+	<link rel='stylesheet' href='assets/css/intlTelInput.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+</head>
+<body>
+	<div class="row expanded notification">
+		<p>Votre inscription a bien été prise en compte</p>
+	</div>
+	<header>
+		<div class="row expanded header">
+			<div class="row max-width">
+				<img src="assets/img/logo.png" alt="Welfarm">
+				<h5>Recevoir des informations régulières de Welfarm<br />Inscription à la Newsletter</h5>
+			</div>
+		</div>
+	</header>
+	<section id="section-form">
+		<div class="row">
+			<div class="small-centered small-11 medium-11 large-10 columns form-container">
+				<h6>En vous inscrivant à la Newsletter de la SPA, vous recevrez dans votre boîte mail les dernières actualités de la Société Protectrice des Animaux. Merci de l'intérêt que vous portez à notre action.</h6>
+				<form autocomplete="on">
+					<div class="radio">
+						<input class="mandatory" id="f_homme" type="radio" name="civility" value="Monsieur">
+						<label for="f_homme">Monsieur</label>
+						<input class="mandatory" id="f_femme" type="radio" name="civility" value="Madame">
+						<label for="f_femme">Madame</label>
+					</div>
+					<input class="input mandatory" type="email" placeholder="VOTRE EMAIL *" name="email">
+					<input class="input mandatory" type="text" placeholder="VOTRE PRENOM *" name="firstname">
+					<input class="input mandatory" type="text" placeholder="VOTRE NOM *" name="lastname">
+					<input class="input" type="tel" id="f_tel" placeholder="+33 6 15 13 87 88" name="phone">
+					<input type="hidden" name="language" value="fr_FR">
+					<div class="feedback error_mail">
+						Le format de l'email est incorrect
+					</div>
+					<div class="feedback g_error">
+						Les champs marqués en rouge sont obligatoires
+					</div>
+					<p>En vous inscrivant, vous acceptez de recevoir des informations de la part de la SPA.</p>
+					<input class="g-recaptcha" data-sitekey="6LeQtxkUAAAAAMxBnBWU78-x1tNlYKWGJFjEBfuL" type="button" id="f_summit" onclick="validateForm()" value="Je m’inscris" name="soumettre">
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row expanded">
+		<p>© 2017 WELFARM</p>
+		</div>
+	</footer>
+	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="assets/js/intlTelInput.min.js" type="text/javascript"></script>
+	<script src="assets/js/app.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
+</body>
+</html>
