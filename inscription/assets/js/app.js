@@ -40,6 +40,7 @@
         }
         else
           $(this).css('border','1px solid #cacaca');
+        $("form div label").css('color','black');
       });
 
       if($("input[name='civility']").length && (!$("input[name='civility']:checked").val())) {
@@ -55,8 +56,8 @@
         $('.g_error').show();
         return false;
       }
-        else 
-    $('.g_error').hide();
+      else 
+        $('.g_error').hide();
 
       if (atpos < 1 || ( dotpos - atpos < 2 ) && index.html) 
       {
@@ -205,10 +206,6 @@ function submitForm(mode) {
         "firstname": pureField($("input[name='firstname']").val()),
         "lastname": pureField($("input[name='lastname']").val()),
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
-        "address": pureField($("input[name='address']").val()),
-        "zipcode": pureField($("input[name='zipcode']").val()),
-        "city": pureField($("input[name='ville']").val()),
-        "country": pureField($("input[name='pays']").val()),
         "language": pureField($("input[name='language']").val())
       }
     },
@@ -231,7 +228,7 @@ function submitForm(mode) {
     },
     "grecaptcha_response": grecaptcha.getResponse()
   }
-makeCorsRequest(data);
+  makeCorsRequest(data);
 }
 
 function checkPhone() {
