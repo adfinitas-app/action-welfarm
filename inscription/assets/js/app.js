@@ -212,30 +212,6 @@ function submitForm(mode) {
         "language": pureField($("input[name='language']").val())
       }
     },
-    "woopra" : {
-      "host": "miedepain.asso.fr",
-      "cookie": getCookie("wooTracker"),
-      "event": "newsletter-site-internet",
-      "cv_email": pureField($("input[name='email']").val()),
-      "cv_phone": pureField($("input[name='phone']").val()),
-      "cv_sexe": getSexe(),
-      "cv_civility": pureField($("input[name='civility']:checked").val()),
-      "cv_firstname": pureField($("input[name='firstname']").val()),
-      "cv_lastname": pureField($("input[name='lastname']").val()),
-      "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
-      "ce_email": pureField($("input[name='email']").val()),
-      "ce_phone": pureField($("input[name='phone']").val()),
-      "ce_sexe": getSexe(),
-      "ce_civility": pureField($("input[name='civility']:checked").val()),
-      "ce_firstname": pureField($("input[name='firstname']").val()),
-      "ce_lastname": pureField($("input[name='lastname']").val()),
-      "ce_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
-      "ce_address": pureField($("input[name='address']").val()),
-      "ce_zipcode": pureField($("input[name='zipcode']").val()),
-      "ce_city": pureField($("input[name='ville']").val()),
-      "ce_country": pureField($("input[name='pays']").val()),
-      "ce_language": pureField($("input[name='language']").val())
-    },
     "mailjet": {
       "Email": pureField($("input[name='email']").val()),
       "Properties": {
@@ -253,7 +229,7 @@ function submitForm(mode) {
       "addLists": [],
       "delLists": []
     },
-    //"grecaptcha_response": grecaptcha.getResponse()
+    "grecaptcha_response": grecaptcha.getResponse()
   }
 makeCorsRequest(data);
 }
