@@ -192,7 +192,7 @@ function submitForm(mode) {
 
   var data = {
     "db": {
-      "schema": "mdp_newsletter",
+      "schema": "welfarm_newsletter",
       "db": {
         "email": pureField($("input[name='email']").val()),
         "phone": pureField($("input[name='phone']").val()),
