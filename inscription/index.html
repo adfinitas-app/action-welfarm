@@ -38,15 +38,15 @@
 					<input class="input mandatory" type="text" placeholder="VOTRE NOM *" name="lastname">
 					<input class="input mandatory" type="tel" id="f_tel" placeholder="+33 6 15 13 87 88" name="phone">
 					<input type="hidden" name="language" value="fr_FR">
+					<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6Le4myIUAAAAAAIXsKiZPNe1G6r0J9clsFwer0oK"></div>
 					<div class="feedback error_mail">
 						Le format de l'email est incorrect
 					</div>
 					<div class="feedback g_error">
 						Les champs marqués en rouge sont obligatoires
 					</div>
-					<div class="g-recaptcha" data-sitekey="6Le4myIUAAAAAAIXsKiZPNe1G6r0J9clsFwer0oK"></div>
 					<p>En vous inscrivant, vous acceptez de recevoir des informations de la part de la SPA.</p>
-					<input class="g-recaptcha" data-sitekey="6LeQtxkUAAAAAMxBnBWU78-x1tNlYKWGJFjEBfuL" type="button" id="f_summit" onclick="validateForm()" value="Je m’inscris" name="soumettre">
+					<input class="g-recaptcha" data-sitekey="6Le4myIUAAAAAAIXsKiZPNe1G6r0J9clsFwer0oK" type="button" id="f_summit" onclick="validateForm()" value="Je m’inscris" name="soumettre" disabled>
 				</form>
 			</div>
 		</div>
