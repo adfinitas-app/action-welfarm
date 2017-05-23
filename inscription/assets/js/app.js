@@ -45,10 +45,10 @@
 
       if($("input[name='civility']").length && (!$("input[name='civility']:checked").val())) {
         check ++;
-        $('.radio p').css('color', 'red');
+        $('[type=radio]+label').css('color', 'red');
       }
       else {
-        $('.radio p').css('color', 'black');
+        $('[type=radio]+label').css('color', 'black');
       }
       $('.error').hide();
 
@@ -70,7 +70,6 @@
         $('.error_mail').hide();
 
 
-      console.log("form OK");
       submitForm();
       showNotif();
     }
