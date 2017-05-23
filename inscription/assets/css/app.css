@@ -27,7 +27,7 @@ input[type="number"] {
 }
 
 .header {
-	background-color: #333;
+	background-color: #ccc;
 }
 .header .row {
 	padding: 10px;
@@ -53,7 +53,6 @@ input[type="number"] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #C0C0C0;
 }
 
 
@@ -177,13 +176,17 @@ input[type=radio]:checked + label:before {
 #f_summit {
 	display: block;
 	padding: 15px;
-	background-color: #97bf0d;
+	background-color: orange;
 	font-family: 'Open Sans';
 	color: white;
 	font-size: 13px;
 	font-weight: 600;
 	border-radius: 6px;
 	text-transform: uppercase;
+	border-width: 0px;
+	border-style: none;
+	border-color: none;
+	border-image: none;
 }
 #f_tel {
 	display: inline-block;
@@ -219,7 +222,7 @@ footer p {
 	padding-bottom: 8px;
 	text-align: center;
 	color: white;
-	background-color: #97bf0d;
+	background-color: #ccc;
 	margin-bottom: 0;
 }
 
