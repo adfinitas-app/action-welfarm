@@ -50,15 +50,6 @@
       else {
         $('.radio p').css('color', 'black');
       }
-      if(grecaptcha.getResponse().length === 0) {
-        check ++;
-        $('.g-recaptcha').css('border', '1px solid red');
-        $('.g-recaptcha').css('border-radius', '5px');
-      }
-      else {
-        $('.g-recaptcha').css('border', 'none');
-        $('.g-recaptcha').css('border-radius', '0px');
-      }
       $('.error').hide();
 
       if (check != 0) {
@@ -79,7 +70,7 @@
         $('.error_mail').hide();
 
 
-
+      console.log("form OK");
       submitForm();
       showNotif();
     }
