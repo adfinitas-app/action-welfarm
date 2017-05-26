@@ -27,7 +27,7 @@ input[type="number"] {
 }
 
 .header {
-	background-color: #ccc;
+	background-color: white;
 }
 .header .row {
 	padding: 10px;
@@ -42,7 +42,7 @@ input[type="number"] {
 .header .row h5 {
 	margin-top: 22px;
 	margin-right: 48px;
-	color: white;
+	color: #999;
 }
 
 
