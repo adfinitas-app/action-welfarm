@@ -145,7 +145,7 @@ function createCORSRequest(method, url) {
   return xhr;
 }
 function makeCorsRequest(data) {
-  var url = 'https://adfinitas-io.herokuapp.com/api/v1/organization/eda21ae3-54fb-49b9-a819-48b8a6f96697/webhook/a2e55464-7fc6-4da1-84b8-045f0b09a4d2';
+  var url = 'TODO';
   var body = JSON.stringify(data);
   var xhr = createCORSRequest('POST', url);
   if (!xhr) {
@@ -194,7 +194,7 @@ function submitForm(mode) {
 
   var data = {
     "db": {
-      "schema": "welfarm_newsletter",
+      "schema": "welfarm_newsletter_site",
       "db": {
         "email": pureField($("input[name='email']").val()),
         "phone": pureField($("input[name='phone']").val()),
