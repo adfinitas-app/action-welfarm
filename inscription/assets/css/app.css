@@ -40,9 +40,10 @@ input[type="number"] {
 	max-width: 140px;
 }
 .header .row h5 {
+    font-weight: bold;
 	margin-top: 22px;
 	margin-right: 48px;
-	color: #999;
+	color: #97c148;
 }
 
 
