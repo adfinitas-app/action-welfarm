@@ -221,6 +221,7 @@ function submitForm(mode) {
         "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='lastname']").val()).toUpperCase(),
         "firstname": pureField($("input[name='firstname']").val()),
         "lastname": pureField($("input[name='lastname']").val()),
+        "phone": pureField($("input[name='phone']").val()),
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
         "language": pureField($("input[name='language']").val())
       },
