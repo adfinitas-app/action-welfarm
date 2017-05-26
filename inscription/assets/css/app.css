@@ -46,19 +46,12 @@ input[type="number"] {
 }
 
 
-
-
 #section-form {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
-
-
-
-
 
 
 .form-container {
@@ -176,7 +169,7 @@ input[type=radio]:checked + label:before {
 #f_summit {
 	display: block;
 	padding: 15px;
-	background-color: orange;
+	background-color: #f29400;
 	font-family: 'Open Sans';
 	color: white;
 	font-size: 13px;
