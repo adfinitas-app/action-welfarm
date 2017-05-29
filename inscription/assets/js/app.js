@@ -79,8 +79,9 @@
     function showNotif() {
       $('.notification').slideDown( "slow", function() {
         setTimeout(function(){
-          $('.notification').slideUp("slow");
-          location.reload();
+          $('.notification').slideUp("slow", function() {
+              location.reload();
+          });
         }, 5000);
       });
     }
