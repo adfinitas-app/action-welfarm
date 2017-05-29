@@ -42,7 +42,7 @@ input[type="number"] {
 .header .row h5 {
     font-weight: bold;
 	margin-top: 22px;
-	margin-right: 48px;
+	margin-right: 48px;ra
 	color: #97c148;
 }
 
@@ -148,7 +148,7 @@ form div label:before {
 }
 .radio label:before {
 	border-radius: 8px;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 input[type=radio]:checked + label:before {
 	content: "\2022";
