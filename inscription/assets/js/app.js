@@ -80,6 +80,7 @@
       $('.notification').slideDown( "slow", function() {
         setTimeout(function(){
           $('.notification').slideUp("slow");
+          location.reload();
         }, 5000);
       });
     }
