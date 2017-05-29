@@ -148,7 +148,7 @@ form div label:before {
 }
 .radio label:before {
 	border-radius: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 input[type=radio]:checked + label:before {
 	content: "\2022";
