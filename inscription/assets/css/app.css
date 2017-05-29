@@ -37,7 +37,7 @@ input[type="number"] {
 }
 .header .row img {
 	float: left;
-	max-width: 140px;
+	max-width: 200px;
 }
 .header .row h5 {
     font-weight: bold;
