@@ -225,6 +225,15 @@ footer p {
 	.header .row h1 {
 		margin-right: 0px;
 	}
+	
+	.header .row h5 {
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 48px;
+    color: #97c148;
+    margin-bottom: 40px;
+    }
+
 }
 
 @media screen and (max-width: 895px) {
