@@ -37,11 +37,11 @@ input[type="number"] {
 }
 .header .row img {
 	float: left;
-	max-width: 200px;
+	max-width: 250px;
 }
 .header .row h5 {
     font-weight: bold;
-	margin-top: 40px;
+	margin-top: 2.6em;
 	margin-right: 48px;
 	color: #97c148;
 }
