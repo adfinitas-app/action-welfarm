@@ -328,7 +328,7 @@ input[type='checkbox'] {
       }
     @media only screen and (max-width: 425px) {
     .grey .info h3 {
-        font-size: 34px;
+        font-size: 34px !important;
     }
     .grey .ou h3{
         font-size: 26px;
