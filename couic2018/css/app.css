@@ -294,7 +294,7 @@ input[type='checkbox'] {
       text-align:center;
       color: #f19402;
       font-family: "Young-Frankenstein-Rotalic";
-        font-size: 50px;
+        font-size: 50px !important;
     }
     .grey .info h4 {
       color: #f19402;
