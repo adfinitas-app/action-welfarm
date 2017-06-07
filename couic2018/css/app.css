@@ -322,11 +322,11 @@ input[type='checkbox'] {
       }
     }
      .grey .ou h3{
-        font-size: 45px !important;
+        font-size: 30px !important;
       }
     @media only screen and (max-width: 425px) {
     .grey .ou h3{
-        font-size: 30px !important;
+        font-size: 26px !important;
       }
     }
     .grey .ou {
