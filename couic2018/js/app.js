@@ -8,7 +8,6 @@ function counter(callbackFunction) {
     return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
-        console.log(snapshot.val());
       $("#nb-signatures").html(snapshot.val() + 3938);
       //alert('ok :)');
       Firebase.goOffline();
@@ -238,7 +237,7 @@ $(document).ready(function() {
   });
 
   fbGlobal.child("counter").once("value", function(snapshot) {
-    $("#nb-signatures").html(snapshot.val());
+    $("#nb-signatures").html(snapshot.val() + 3938);
     Firebase.goOffline();
   });
   $(window).on("scroll", launchAnimation);
