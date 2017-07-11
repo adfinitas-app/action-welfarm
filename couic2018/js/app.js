@@ -8,6 +8,7 @@ function counter(callbackFunction) {
     return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
+        console.log(snapshot.val());
       $("#nb-signatures").html(snapshot.val() + 3938);
       //alert('ok :)');
       Firebase.goOffline();
