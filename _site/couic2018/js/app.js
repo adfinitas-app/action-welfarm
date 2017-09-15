@@ -114,6 +114,11 @@ function submitForm() {
   } else {
     optin = false;
   }
+  if ($("input[name='optin_partenaire']:checked").length == 1) {
+    optin_partenaire = true;
+  } else {
+    optin_partenaire = false;
+  }
   today = new Date();
   var data = {
     "schema": "welfarm",
@@ -123,6 +128,7 @@ function submitForm() {
       "email": pureField($("input[name='email']").val()),
       "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
+      "optin_partenaire":optin_partenaire,
       "event": "petitionporcinet",
       "signin_date": today.toString()
     }
