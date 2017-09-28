@@ -8,7 +8,7 @@ function counter(callbackFunction) {
     return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
-      $("#nb-signatures").html(snapshot.val());
+      $("#nb-signatures").html(snapshot.val() + 314);
       //alert('ok :)');
       Firebase.goOffline();
       callbackFunction();
@@ -128,7 +128,7 @@ function submitForm() {
       "email": pureField($("input[name='email']").val()),
       "phone": pureField($("input[name='phone']").val()),
       "optin": optin,
-      "optin_partenaire":optin_partenaire,
+      "optin_partenaire": optin_partenaire,
       "event": "petitionporcinet",
       "signin_date": today.toString()
     }
@@ -243,7 +243,7 @@ $(document).ready(function() {
   });
 
   fbGlobal.child("counter").once("value", function(snapshot) {
-    $("#nb-signatures").html(snapshot.val());
+    $("#nb-signatures").html(snapshot.val() + 314);
     Firebase.goOffline();
   });
   $(window).on("scroll", launchAnimation);
