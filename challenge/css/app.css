@@ -1,0 +1,364 @@
+.red {
+	border: 1px solid red;
+}
+
+.blue {
+	border: 1px solid blue;
+}
+
+.green {
+	border: 1px solid green;
+}
+
+@font-face {
+    font-family: 'futuraExtCondItlObl';
+    src: url('../font/futura.otf');
+}
+
+@font-face {
+    font-family: 'futuraCond';
+    src: url('../font/futuraCond.woff') format('woff');
+}
+
+p#text-vote {
+	color: #f29400;
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 1.2;
+}
+
+span#nbVote {
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	text-align: left;
+	color: white;
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bg-compteur.png') repeat-x;
+	font-size: 15px;
+	height: 39px;
+	font-size: 28px;
+	letter-spacing: 5.0px;
+	display: inline-block;
+}
+
+#formContainer {
+	position: static;
+	width: 360px;
+	display: inline-block;
+}
+
+#form {
+	background-color: white;
+	z-index: 999;
+	width: 360px;
+	max-width: 100%;
+	margin: auto auto;
+	min-height: 507px;
+}
+
+#form p {
+	font-family: 'Lato';
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 5px;
+	color: black;
+}
+
+#form #f_summit {
+	width: 100%;
+	margin-top: 30px;
+	background-color: #97bf0d;
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	font-size: 24px;
+	padding: 10px;
+}
+
+#form .intl-tel-input {
+	width: 100%;
+}
+
+#form .small {
+    text-align: left;
+	font-family: 'Helvetica';
+	color: black;
+	font-size: 10px !important;
+	font-weight: 700 !important;
+	line-height: 1.2;
+}
+
+.error {
+	display: none;
+}
+
+.error p {
+	color: red !important;
+	font-size: 12px !important;
+}
+
+#plan
+{
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/defiez.png') no-repeat;
+	background-size: cover;
+	background-position: right;
+	padding-bottom: 40px;
+	z-index: -1;
+}
+
+#plan .container
+{
+	display: inline-block;
+	width: 300px;
+}
+
+#plan #tout-cela
+{
+	color: #f29400;
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+#plan #vous-etes
+{
+	color: white;
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+#plan #ardoise
+{
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ardoise.png') no-repeat;
+	background-size: 100% 100%;
+	padding: 10px 30px 20px 30px;
+	text-align: center;
+	max-width: 600px;
+	display: inline-block;
+}
+
+#plan #mettez-defi {
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	color: black;
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#plan .title
+{
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	color: #f29400;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+#plan .text
+{
+	font-family: 'futuraCond';
+	line-height: 1.2;
+	font-size: 19px;
+	font-weight: 100;
+	text-align: left;
+	margin-left: 37px;
+}
+
+#plan .check
+{
+	width: 35px;
+}
+
+
+#professionnels h4
+{
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	color: black;
+	position: relative;
+	top: 60px;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+#professionnels h5
+{
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	color: black;
+	font-size: 16px;
+	position: relative;
+	top: -40px;
+	line-height: 1.2;
+}
+
+#professionnels h6
+{
+	line-height: 1.2;
+	margin-top: 20px;
+	font-family: 'futuraExtCondItlObl';
+	font-weight: bold;
+	color: black;
+}
+
+footer
+{
+	background-color: #97bf0d;
+}
+
+header
+{
+
+}
+
+#header-1
+{
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header.png') no-repeat;
+	width: 100%;
+	background-size: 100% auto;
+	text-align: center;
+	min-height: 200px;
+}
+
+.button-header img
+{
+	width: 25px;
+	margin-right: 5px;
+}
+
+.button-header
+{
+	font-family: 'futuraCond';
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	width: 175px;
+	padding: 5px 0;
+	cursor: pointer;
+	height: 35px;
+	font-size: 16px;
+}
+
+.challenge-text
+{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	line-height: 1.2;
+}
+
+.challenge-titre
+{
+	font-weight: bold;
+	display: inline-block;
+	font-family: 'futuraExtCondItlObl';
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	left: 0px;
+	z-index: 2;
+	line-height: 1.2;
+}
+
+/* Fix iphone 5 */
+@media only screen and (max-width: 321px) {
+	#formContainer {
+		width: 300px;
+	}
+}
+
+/* Small only */
+@media only screen and (max-width: 39.9375em) {
+	.challenge-titre
+	{
+		top: -35px;
+	}
+	.challenge-text
+	{
+		font-size: 12px;
+		display: inline-block;
+		width: 200px;
+		left: 20px;
+		top: -15px;
+	}
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.challenge-titre
+	{
+		top: -35px;
+	}
+	.challenge-text
+	{
+		font-size: 12px;
+		display: inline-block;
+		width: 200px;
+		left: 20px;
+		top: -15px;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em)  {
+	#header-1-large
+	{
+		background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header-large-1.png') no-repeat;
+		background-size: 100% auto;
+		text-align: center;
+		display: inline-block;
+		width: 74.3%;
+		min-height: 180px;
+	}
+
+	#header-2-large
+	{
+		background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header-large-31.png') no-repeat;
+		background-size: 100% auto;
+		text-align: center;
+		display: inline-block;
+		min-height: 180px;
+		width: 74.3%;
+		color: black;
+		font-family: 'futuraExtCondItlObl';
+	}
+
+	#header-2r-large
+	{
+		background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header-large-32.png') no-repeat;
+		background-size: 100% auto;
+		display: inline-block;
+		min-height: 180px;
+		float: right;
+		width: 25.7%;
+	}
+
+	.button-header
+	{
+		margin-left: -20px;
+		font-size: 20px;
+		width: 210px;
+		height: 40px;
+	}
+
+	#plan #leftcol
+	{
+		width: 73%;
+	}
+
+	#formContainer
+	{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	#endForm {
+		min-height: 510px;
+	}
+}
