@@ -11,7 +11,51 @@ $(document).ready(function() {
 				"ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"
 			]
 	});
+	launchCount();
 });
+
+function launchCount()
+{
+	var url = 'https://form-to-db.herokuapp.com/count?table=welfarm_challenge';
+	var method = 'GET';
+	var xhr = new XMLHttpRequest();
+
+	if ("withCredentials" in xhr) {
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+				// Request finished. Do processing here.
+				$('#nbVote').text(xhr.responseText);
+			}
+		};
+		xhr.onerror = function() {
+			$('#nbVote').text('X');
+		};
+		xhr.open(method, url, true);
+	} else if (typeof XDomainRequest != "undefined") {
+		xhr = new XDomainRequest();
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+				// Request finished. Do processing here.
+				$('#nbVote').text(xhr.responseText);
+			}
+		};
+		xhr.onerror = function() {
+			$('#nbVote').text('X');
+		};
+		xhr.open(method, url);
+	} else {
+		// CORS not supported
+		xhr = null;
+	}
+	if (!xhr) {
+		alert('CORS not supported');
+		return;
+	}
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.setRequestHeader('Authorization', 'Basic d2ViQGFkZmluaXRhcy5mcjphQiF6VzU7N1dxNH4=');
+	console.log('sent');
+	xhr.send();
+}
 
 function validateForm() {
 	var emailID = document.getElementById('f_email').value;
