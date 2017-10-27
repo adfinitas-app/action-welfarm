@@ -247,9 +247,10 @@ header
 {
 	position: absolute;
 	z-index: 1;
-	left: 0;
-	top: 0;
 	line-height: 1.2;
+	display: inline-block;
+	left: 20px;
+	width: 200px;
 }
 
 .challenge-titre
@@ -258,7 +259,7 @@ header
 	display: inline-block;
 	font-family: 'futuraExtCondItlObl';
 	position: absolute;
-	top: -20px;
+	top: -35px;
 	right: 0px;
 	left: 0px;
 	z-index: 2;
@@ -274,34 +275,12 @@ header
 
 /* Small only */
 @media only screen and (max-width: 39.9375em) {
-	.challenge-titre
-	{
-		top: -35px;
-	}
-	.challenge-text
-	{
-		font-size: 12px;
-		display: inline-block;
-		width: 200px;
-		left: 20px;
-		top: -15px;
-	}
+
 }
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	.challenge-titre
-	{
-		top: -35px;
-	}
-	.challenge-text
-	{
-		font-size: 12px;
-		display: inline-block;
-		width: 200px;
-		left: 20px;
-		top: -15px;
-	}
+
 }
 
 /* Large and up */
@@ -360,5 +339,11 @@ header
 
 	#endForm {
 		min-height: 510px;
+	}
+
+	.challenge-text
+	{
+		left: 10px;
+		width: auto;
 	}
 }

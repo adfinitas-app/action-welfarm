@@ -9,6 +9,27 @@
   <link rel="stylesheet" type="text/css" title="stylesheet" href="css/app.css">
 </head>
 <body>
+	<!-- Init Facebook API -->
+	<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '1942485012743307',
+			xfbml      : true,
+			version    : 'v2.10'
+		});
+		FB.AppEvents.logPageView();
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- End of Facebook API -->
+
 	<header>
 		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/logo-welfarm.png" alt="Welfarm" style="position: absolute;top: 20px;left: 30px;" class="show-for-large"/>
 		<!-- Mode Desktop -->
@@ -16,8 +37,8 @@
 			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/top-header-large.png" class="width-100"/>
 			<div class="row expanded margin-bottom-0" style="background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header-large-2.png')">
 				<div id="header-1-large" style="z-index: 3">
-					<button type="button" class="button-header" style="margin-top: 20px;margin-bottom: 10px;"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/trophy.png" />JE DÉCOUVRE LE CHALLENGE</button><br />
-					<button type="button" class="button-header"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/people.png" />JE METS AU DÉFI MES AMIS</button>
+					<button type="button" class="button-header button-challenge" style="margin-top: 20px;margin-bottom: 10px;"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/trophy.png" />JE DÉCOUVRE LE CHALLENGE</button><br />
+					<button type="button" class="button-header button-partage"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/people.png" />JE METS AU DÉFI MES AMIS</button>
 				</div>
 			</div>
 			<div class="row expanded" style="background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/ligne-header-large-2.png');">
@@ -58,12 +79,12 @@
 			<div class="column small-12 large-7 end">
 				<div class="hide-for-large">
 					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/top-header.png" class="width-100"/>
-					<div style="position: relative; z-index: 0;background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bg-header.png')">
+					<div style="position: relative; z-index: 0;background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bg-header.png')" id="anchorMobile">
 						<div id="header-1" style="z-index: 1;">
 							<div style="display: table; height: 100%; width: 100%;">
 								<div style="display: table-cell; vertical-align: middle;">
-									<button type="button" class="button-header" style="margin-top: 20px;margin-bottom: 10px;"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/trophy.png" />JE DÉCOUVRE LE CHALLENGE</button><br />
-									<button type="button" class="button-header"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/people.png" />JE METS AU DÉFI MES AMIS</button>
+									<button type="button" class="button-header button-challenge" style="margin-top: 20px;margin-bottom: 10px;"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/trophy.png" />JE DÉCOUVRE LE CHALLENGE</button><br />
+									<button type="button" class="button-header button-partage"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/people.png" />JE METS AU DÉFI MES AMIS</button>
 								</div>
 							</div>
 						</div>
@@ -221,19 +242,21 @@
 					<div>
 						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/carte.png"/>
 					</div>
-					<h6 class="margin-bottom-2">Votre commune ou école ne s'est pas encore engagée ? Contactez-les pour qu’elles franchissent le pas.<br /><br />Plus de renseignements en écrivant à <a href="mailto:benevoles@welfarm.fr">benevoles@welfarm.fr</a></h6>
+					<h6 class="margin-bottom-2">Votre commune ou école ne s'est pas encore engagée ?<br />Contactez-les pour qu’elles franchissent le pas.<br /><br />Plus de renseignements en écrivant à <a href="mailto:benevoles@welfarm.fr">benevoles@welfarm.fr</a></h6>
 				</div>
 
 				<!-- Formulaire -->
 				<div class="column small-12 large-offset-7 large-5 text-center">
 					<div>
 						<div id="formContainer">
-							<div class="row collapse margin-top-1" style="margin-bottom: 2px;max-width: 410px;background-color: white;">
-								<div class="column small-5 large-5 text-left">
-									<span id="nbVote">X</span>
-								</div>
-								<div class="column small-7 large-7 text-left">
-									<p id="text-vote" class="text-left large-text-center">personnes relèvent déjà le défi&nbsp;!</p>
+							<div class="margin-top-1" style="margin-bottom: 2px;max-width: 410px;background-color: white;">
+								<div style="display: table; width: 100%;text-align: left;">
+									<div style="display: table-cell;text-align: left;">
+										<span id="nbVote" style="margin-right: 10px;">X</span>
+									</div>
+									<div style="display: table-cell">
+										<p id="text-vote" class="text-left">personnes relèvent déjà le défi&nbsp;!</p>
+									</div>
 								</div>
 							</div>
 							<form id="form">
@@ -311,5 +334,18 @@
 <script src="js/app.js"></script>
 <script src="js/main.js"></script>
 <script src="js/sendForm.js"></script>
+<script>
+var a = document.getElementsByClassName('button-partage');
+function fb() {
+	FB.ui({
+      method: 'share',
+      display: 'popup',
+      href: 'http://action.welfarm.fr/challenge',
+    }, function(response){});
+}
+
+a[0].onclick = fb;
+a[1].onclick = fb;
+</script>
 </body>
 </html>
