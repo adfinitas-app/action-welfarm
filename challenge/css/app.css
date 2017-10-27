@@ -183,6 +183,7 @@ span#nbVote {
 	top: 20px;
 	font-size: 20px;
 	line-height: 1.2;
+	z-index: 1;
 }
 
 #professionnels h5
