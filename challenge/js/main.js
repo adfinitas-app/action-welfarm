@@ -145,7 +145,7 @@ $(document).ready(function () {
 				},
 				desktop: {
 					titre: {'font-size': '24px', 'top': '-20px'},
-					text: {'font-size': '16px', 'top': '0px'}
+					text: {'font-size': '16px', 'top': '-10px'}
 				}
 			},
 			number: 0
@@ -159,8 +159,8 @@ $(document).ready(function () {
 					text: {'font-size': '12px', 'top': '10px',}
 				},
 				desktop: {
-					titre: {'font-size': '24px', 'top': '-20px'},
-					text: {'font-size': '16px', 'top': '30px'}
+					titre: {'font-size': '28px', 'top': '10px'},
+					text: {'font-size': '18px', 'top': '30px'}
 				}
 			},
 			number: 1
@@ -190,7 +190,7 @@ $(document).ready(function () {
 				},
 				desktop: {
 					titre: {'font-size': '24px', 'top': '-20px'},
-					text: {'font-size': '16px', 'top': '30px'}
+					text: {'font-size': '16px', 'top': '20px'}
 				}
 			},
 			number: 3
@@ -204,8 +204,8 @@ $(document).ready(function () {
 					text: {'font-size': '11px', 'top': '30px'}
 				},
 				desktop: {
-					titre: {'font-size': '18px', 'top': '-20px'},
-					text: {'font-size': '14px', 'top': '40px'}
+					titre: {'font-size': '20px', 'top': '-20px'},
+					text: {'font-size': '15px', 'top': '40px'}
 				}
 			},
 			number: 4
@@ -220,7 +220,7 @@ $(document).ready(function () {
 				},
 				desktop: {
 					titre: {'font-size': '24px', 'top': '-20px'},
-					text: {'font-size': '16px', 'top': '0px'}
+					text: {'font-size': '16px', 'top': '10px'}
 				}
 			},
 			number: 5
@@ -249,7 +249,7 @@ $(document).ready(function () {
 					text: {'font-size': '12px', 'top': '10px'}
 				},
 				desktop: {
-					titre: {'font-size': '24px', 'top': '-20px'},
+					titre: {'font-size': '24px', 'top': '-10px'},
 					text: {'font-size': '16px', 'top': '30px'}
 				}
 			},

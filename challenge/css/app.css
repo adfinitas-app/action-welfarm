@@ -108,7 +108,7 @@ span#nbVote {
 #plan .container
 {
 	display: inline-block;
-	width: 300px;
+	width: 320px;
 }
 
 #plan #tout-cela
@@ -116,7 +116,7 @@ span#nbVote {
 	color: #f29400;
 	font-family: 'futuraExtCondItlObl';
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
 	margin-bottom: 0;
 }
 
@@ -125,7 +125,7 @@ span#nbVote {
 	color: white;
 	font-family: 'futuraExtCondItlObl';
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 19px;
 	line-height: 1.2;
 }
 
@@ -180,7 +180,7 @@ span#nbVote {
 	font-weight: bold;
 	color: black;
 	position: relative;
-	top: 60px;
+	top: 20px;
 	font-size: 20px;
 	line-height: 1.2;
 }
@@ -191,8 +191,6 @@ span#nbVote {
 	font-weight: bold;
 	color: black;
 	font-size: 16px;
-	position: relative;
-	top: -40px;
 	line-height: 1.2;
 }
 
@@ -241,6 +239,12 @@ header
 	cursor: pointer;
 	height: 35px;
 	font-size: 16px;
+	transition: background-color 0.4s ease-out;
+}
+
+.button-header:hover
+{
+	background-color: #a2c037;
 }
 
 .challenge-text
@@ -320,9 +324,9 @@ header
 	.button-header
 	{
 		margin-left: -20px;
-		font-size: 20px;
-		width: 210px;
-		height: 40px;
+		font-size: 22px;
+		width: 230px;
+		height: 42px;
 	}
 
 	#plan #leftcol
@@ -346,4 +350,52 @@ header
 		left: 10px;
 		width: auto;
 	}
+
+	#plan .container
+	{
+		width: 440px;
+	}
+
+	#plan #tout-cela
+	{
+		font-size: 36px;
+	}
+
+	#plan #vous-etes
+	{
+		font-size: 24px;
+	}
+
+	#plan #mettez-defi
+	{
+		font-size: 36px;
+	}
+
+	#plan .title
+	{
+		font-size: 24px;
+		margin-left: 10px;
+	}
+
+	#plan .text
+	{
+		font-size: 20px;
+		margin-left: 46px;
+	}
+
+	#professionnels h4
+	{
+		font-size: 36px;
+	}
+
+	#professionnels h5
+	{
+		font-size: 20px;
+	}
+
+	#professionnels h6
+	{
+		font-size: 20px;
+	}
+
 }

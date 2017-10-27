@@ -24,7 +24,7 @@ function launchCount()
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				$('#nbVote').text(xhr.responseText);
+				$('#nbVote').text(("00000" + xhr.responseText).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
@@ -36,7 +36,7 @@ function launchCount()
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				$('#nbVote').text(xhr.responseText);
+				$('#nbVote').text(("00000" + xhr.responseText).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
