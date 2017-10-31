@@ -120,7 +120,8 @@ $(document).ready(function () {
 		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/merci.png",
 		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-fb.png",
 		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-twitter.png",
-		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-insta.png"
+		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-insta.png",
+		"https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/kit.png"
 	);
 
 	$('.button-challenge').click(function() {
