@@ -90,7 +90,7 @@ function validateForm() {
 	} else
 		$('.error_mail').hide();
 	submitForm();
-	//script anthony
+	fbq('track', 'CompleteRegistration');
 	return true;
 };
 
