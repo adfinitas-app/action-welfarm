@@ -90,6 +90,7 @@ function validateForm() {
 	} else
 		$('.error_mail').hide();
 	submitForm();
+	//script anthony
 	return true;
 };
 
@@ -156,7 +157,7 @@ function showNotif() {
 		FB.ui({
 			method: 'share',
 			display: 'popup',
-			quote: "Je viens de m'engager à passer des fêtes sans souffrances animales avec l’association WELFARM. Vous aussi, relevez le challenge #ZéroFoieGras ! RDV sur http://bit.ly/2inDv7w",
+			quote: "Je viens de m'engager à passer des fêtes sans souffrances animales avec l’association WELFARM. Vous aussi, relevez le challenge #ZéroFoieGras ! RDV sur http://bit.ly/ZeroFoieGras",
 			href: 'http://action.welfarm.fr/challenge',
 		}, function(response){});
 	}
