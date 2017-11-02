@@ -274,14 +274,14 @@ header
 /* Fix iphone 5 */
 @media only screen and (max-width: 321px) {
 	#formContainer {
-		width: 300px;
+		width: 290px;
 	}
 }
 
 /* Small only */
 @media only screen and (max-width: 39.9375em) {
 	#formContainer {
-		width: 300px;
+		width: 100%;
 	}
 }
 
