@@ -150,7 +150,20 @@ function makeCorsRequest(data) {
 
 function showNotif() {
 	//afficher merci
-	$('#form').html('<img alt="Séparateur verticale" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/barre-form.png" style="height: 30px;" /><div style="padding: 0 30px;"><img alt="Merci!" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/merci.png"/><p style="font-family: \'futuraExtCondItlObl\';font-size: 26px;text-align: center;line-height: 1.2;margin-bottom: 20px;">BRAVO POUR VOTRE ENGAGEMENT !</p><p style="font-family: \'futuraExtCondItlObl\';font-size: 17px;text-align: center;line-height: 1.2;margin-bottom: 20px;">NOUS VOUS ENGAGEONS À LE PARTAGER SUR LES RÉSEAUX SOCIAUX</p><div><a target="_blank" href="https://www.facebook.com/WelfarmFR/"><img alt="Facebook" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-fb.png" style="width: 28px; height: 55px;margin-right: 20px;"/></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Je%20viens%20de%20m%E2%80%99engager%20%C3%A0%20passer%20des%20f%C3%AAtes%20sans%20souffrances%20animales%20avec%20@WelfarmFR.%20Vous%20aussi,%20relevez%20le%20challenge%20&hashtags=Z%C3%A9roFoieGras"><img alt="Twitter" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-twitter.png" style="width: 51px; height: 39px;margin-right: 20px;"/></a><a target="_blank" href="https://www.instagram.com/welfarmfr/"><img alt="Instagram" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-insta.png" style="width: 48px; height: 48px;"/></a></div><div class="text-left" style="height: 90px;"><a href="mailto:benevoles@welfarm.fr"><img alt="kit militant" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/kit.png" style="position: relative;left: -18px;top: 6px;height: 70px;" /></a>	</div></div>');
+	$('#form').html('<img alt="Séparateur verticale" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/barre-form.png" style="height: 30px;" /><div style="padding: 0 30px;"><img alt="Merci!" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/merci.png"/><p style="font-family: \'futuraExtCondItlObl\';font-size: 26px;text-align: center;line-height: 1.2;margin-bottom: 20px;">BRAVO POUR VOTRE ENGAGEMENT !</p><p style="font-family: \'futuraExtCondItlObl\';font-size: 17px;text-align: center;line-height: 1.2;margin-bottom: 20px;">NOUS VOUS ENGAGEONS À LE PARTAGER SUR LES RÉSEAUX SOCIAUX</p><div><img alt="Facebook" class="button-partage" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-fb.png" style="width: 28px; height: 55px;margin-right: 20px;cursor: pointer;"/><a target="_blank" href="https://twitter.com/intent/tweet?text=Je%20viens%20de%20m%E2%80%99engager%20%C3%A0%20passer%20des%20f%C3%AAtes%20sans%20souffrances%20animales%20avec%20@WelfarmFR.%20Vous%20aussi,%20relevez%20le%20challenge%20&hashtags=Z%C3%A9roFoieGras"><img alt="Twitter" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-twitter.png" style="width: 51px; height: 39px;margin-right: 20px;"/></a><a target="_blank" href="https://www.instagram.com/welfarmfr/"><img alt="Instagram" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/bravo-insta.png" style="width: 48px; height: 48px;"/></a></div><div class="text-left" style="height: 90px;"><a href="mailto:benevoles@welfarm.fr"><img alt="kit militant" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/WELFARM/petition_foiegras_2017/kit.png" style="position: relative;left: -18px;top: 6px;height: 70px;" /></a>	</div></div>');
+	var a = document.getElementsByClassName('button-partage');
+	function fb() {
+		FB.ui({
+			method: 'share',
+			display: 'popup',
+			quote: "Je viens de m'engager à passer des fêtes sans souffrances animales avec l’association WELFARM. Vous aussi, relevez le challenge #ZéroFoieGras ! RDV sur action.welfarm.fr/challenge",
+			href: 'http://action.welfarm.fr/challenge',
+		}, function(response){});
+	}
+	console.log('a: ' + a.length);
+	a[0].onclick = fb;
+	a[1].onclick = fb;
+	a[2].onclick = fb;
 }
 
 function extractUrlParams() {
