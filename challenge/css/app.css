@@ -399,4 +399,9 @@ header
 		font-size: 20px;
 	}
 
+	#professionnels #column-pro
+	{
+		width: 73% !important;
+		padding: 0 100px !important;
+	}
 }
