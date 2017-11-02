@@ -280,7 +280,9 @@ header
 
 /* Small only */
 @media only screen and (max-width: 39.9375em) {
-
+	#formContainer {
+		width: 300px;
+	}
 }
 
 /* Medium only */
