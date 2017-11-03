@@ -205,7 +205,7 @@ $(document).ready(function () {
 					text: {'font-size': '11px', 'top': '30px'}
 				},
 				desktop: {
-					titre: {'font-size': '24px', 'top': '-20px'},
+					titre: {'font-size': '24px', 'top': '-10px'},
 					text: {'font-size': '15px', 'top': '40px'}
 				}
 			},
