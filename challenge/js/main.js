@@ -161,7 +161,7 @@ $(document).ready(function () {
 				},
 				desktop: {
 					titre: {'font-size': '28px', 'top': '10px'},
-					text: {'font-size': '18px', 'top': '30px'}
+					text: {'font-size': '18px', 'top': '50px'}
 				}
 			},
 			number: 1
