@@ -152,7 +152,7 @@ $(document).ready(function () {
 			number: 0
 		},
 		{
-			titre: 'CONDITIONS D'ÉLEVAGES,
+			titre: 'CONDITIONS D’ÉLEVAGES',
 			text: 'DURANT LES 2 SEMAINES DE GAVAGE, LES CANARDS SONT DÉTENUS DANS DES CAGES COLLECTIVES. ILS NE SONT PAS LIBRES DE LEURS MOUVEMENTS.',
 			style: {
 				mobile: {
