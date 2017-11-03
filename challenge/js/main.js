@@ -197,7 +197,7 @@ $(document).ready(function () {
 			number: 3
 		},
 		{
-			titre: 'CANETONS<br> FEMELLES',
+			titre: 'CANETONS FEMELLES',
 			text: 'JUGÉES MOINS RENTABLES QUE LES MÂLES, 35 MILLIONS DE CANETONS FEMELLES SONT BROYÉES QUELQUES HEURES APRÈS LEUR NAISSANCE CHAQUE ANNEE.',
 			style: {
 				mobile: {
