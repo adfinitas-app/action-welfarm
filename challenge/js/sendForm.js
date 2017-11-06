@@ -91,7 +91,7 @@ function validateForm() {
 		$('.error_mail').hide();
 	submitForm();
 	fbq('track', 'CompleteRegistration');
-	_gaq.push(["_trackEvent", "inscription", "click", "challenge", "1"]);
+	ga('send', 'event', 'inscription', 'formulaire');
 	return true;
 };
 
