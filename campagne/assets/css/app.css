@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('oswald-light/oswald-light-webfont.eot');
+    src: url('oswald-light/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oswald-light/oswald-light-webfont.woff2') format('woff2'),
+         url('oswald-light/oswald-light-webfont.woff') format('woff'),
+         url('oswald-light/oswald-light-webfont.ttf') format('truetype'),
+         url('oswald-light/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('oswald-bold/oswald-bold-webfont.eot');
+    src: url('oswald-bold/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oswald-bold/oswald-bold-webfont.woff2') format('woff2'),
+         url('oswald-bold/oswald-bold-webfont.woff') format('woff'),
+         url('oswald-bold/oswald-bold-webfont.ttf') format('truetype'),
+         url('oswald-bold/oswald-bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('oswald-regular/oswald-regular-webfont.eot');
+    src: url('oswald-regular/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oswald-regular/oswald-regular-webfont.woff2') format('woff2'),
+         url('oswald-regular/oswald-regular-webfont.woff') format('woff'),
+         url('oswald-regular/oswald-regular-webfont.ttf') format('truetype'),
+         url('oswald-regular/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('omnes/Omnes-Regular.eot');
+    src: url('omnes/Omnes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('omnes/Omnes-Regular.woff2') format('woff2'),
+        url('omnes/Omnes-Regular.woff') format('woff'),
+        url('omnes/Omnes-Regular.ttf') format('truetype'),
+        url('omnes/Omnes-Regular.svg#Omnes-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#sticky {
+	position: fixed;
+	right: 10px;
+	top: 15px;
+}
+
+#title-second-part {
+	padding-top: 75px;
+	margin-bottom: 75px;
+}
+
+#title-second-part h3 {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 40px;
+}
+
+#title-second-part p {
+	font-family: 'oswaldlight', Arial, serif;
+	font-size: 25px;
+}
+
+.picto-text .columns {
+	margin-bottom: 75px;
+}
+
+.picto-text {
+	font-family: 'oswaldregular', Arial, serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #A2C037;
+}
+
+.picto-text img {
+	margin-bottom: 25px;
+}
+
+.picto-text b {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 20px;
+}
+
+#combat .row:nth-child(2){
+	margin-bottom: 50px;
+}
+
+#part-don {
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/bg-don.jpg') no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+#title-don {
+	margin-top: 125px;
+	color: white;
+}
+
+#title-don h3 {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 40px;
+}
+
+#title-don p {
+	font-family: 'oswaldregular', Arial, serif;
+	font-size: 30px;
+}
+
+#don h3 {
+	color: #F29400;
+	font-family: 'oswaldregular', Arial, serif;
+	font-size: 35px;
+	margin-top: 225px;
+}
+
+div#eq .priceCard .border-bottom {
+
+}
+
+div#eq .priceCard .carte
+{
+	background-color: rgba(0, 0, 0, 0.0);
+	padding: 0 50px 20px 50px;
+	border-top: #F27000 solid 2px; 
+	border-left: #F27000 solid 2px;
+	border-right: #F27000 solid 2px;
+	border-bottom: none;
+}
+
+@media screen and (max-width: 40em) {
+	div#eq .priceCard .carte {
+		padding: 0;
+		padding-bottom: 20px;
+	}
+}
+
+div#eq .priceCard .text
+{
+	color: white;
+	font-size: 16px;
+	min-height: 125px;
+	line-height: 1.6;
+}
+
+div#eq .priceCard .amount
+{
+	font-family: 'oswaldbold', Arial, serif;
+	color: #F29400;
+	font-size: 50px;
+	padding-top: 20px;
+	margin-bottom: 0;
+}
+
+div#eq .priceCard .deduc
+{
+	font-family: 'oswaldbold', Arial, serif;
+	color: #F29400;
+	font-size: 20px;
+	margin-bottom: 0;
+	line-height: 35px;
+}
+
+div#eq .priceCard .btn-card
+{
+	background: #fb3704;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+div#eq .priceCard .btn_eq {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#impots {
+	color: white;
+	font-size: 20px;
+	background-color: #99CC00;
+}
+
+#impots .row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#part1_footer {
+	margin-top: 60px;
+}
+
+#part1_footer p:first-child {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 30px;
+}
+
+#don_confiance {
+	font-family: 'omnes', Arial, serif;
+	font-size: 15px;
+}
+
+#information p {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 35px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+#agir {
+	padding-top: 20px;
+	font-family: 'oswaldregular', Arial, serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#onglet {
+	margin-top: 20px;
+	color: #99CC00;
+	font-family: 'oswaldregular', Arial, serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.block {
+	display: inline-block;
+}
+.slash {
+	font-family: 'oswaldlight', Arial, serif;
+}
+
+.agissez {
+	color: #99CC00;
+}
+
+.fb_twit {
+	margin-left: 20px;
+}
+
+#logo-header {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+}
+
+#droite {
+	position: absolute;
+	top: 48%;
+	right: 20px;
+	z-index: 10;
+}
+
+#gauche {
+	position: absolute;
+	top: 48%;
+	left: 20px;
+}
+
+#slide {
+	height: 100vh;
+}
+
+#nav {
+	position: absolute;
+	bottom: 25px;
+	left: 20%;
+}
+
+#right-slide {
+	min-height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #FD8F00;
+	width: 50%;
+}
+
+#right-slide-2 {
+	min-height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: black;
+	width: 50%;
+}
+
+#poules {
+	font-family: 'oswaldlight', Arial, serif;
+	color: white;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+#abattoir {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 45px;
+	line-height: 50px;
+}
+
+#anes {
+	font-family: 'oswaldlight', Arial, serif;
+	color: white;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+#hardonnerie {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 35px;
+	line-height: 40px;
+}
+
+#agis {
+	font-family: 'oswaldregular', Arial, serif;
+	color: white;
+	font-size: 27px;
+	line-height: 27px;
+	padding-top: 30px;
+}
+
+#right-container {
+	padding-top: 20%;
+}
+
+#pointe {
+	position: absolute;
+	top: 45%;
+	left: -20px;
+	width: 50px;
+}
+
+header #dome {
+	position: absolute;
+	bottom: 0;
+	left: -55px;
+	z-index: 8;
+}
+
+#slider1Mobile {
+	min-height: 100vh;
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide1_mobile.jpg') no-repeat;
+	background-size: cover;
+}
+
+#slider2Mobile {
+	min-height: 100vh;
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide2_mobile.jpg') no-repeat;
+	background-size: cover;
+}
+
+#dome-mobile {
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+}
+
+#poules-mobile {
+	font-family: 'oswaldlight', Arial, serif;
+	color: white;
+	font-size: 25px;
+	line-height: 30px;
+	padding-top: 120px;
+}
+
+#abattoir-mobile {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+#agis-mobile {
+	font-family: 'oswaldregular', Arial, serif;
+	color: white;
+	font-size: 22px;
+	line-height: 22px;
+	padding-top: 30px;
+}
+
+#logo-header-mobile {
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+
+#slider3Mobile {
+	min-height: 100vh;
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide3_mobile.jpg') no-repeat;
+	background-size: cover;
+}
+
+#anes-mobile {
+	padding-top: 120px;
+	font-family: 'oswaldlight', Arial, serif;
+	color: white;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+#hardonnerie-mobile {
+	font-family: 'oswaldbold', Arial, serif;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+@media screen and (min-height: 900px) {
+	#right-container {
+		padding-top: 30%;
+	}
+}
+
+@media screen and (max-width: 64em) {
+	#DeC {
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	#part1_footer p:first-child {
+	display: block;
+}
+}
+
