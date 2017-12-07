@@ -57,7 +57,7 @@
 
 #title-second-part {
 	padding-top: 75px;
-	margin-bottom: 75px;
+	margin-bottom: 25px;
 }
 
 #title-second-part h3 {
@@ -119,7 +119,7 @@
 	color: #F29400;
 	font-family: 'oswaldregular', Arial, serif;
 	font-size: 35px;
-	margin-top: 225px;
+	margin-top: 75px;
 }
 
 div#eq .priceCard .border-bottom {
@@ -129,11 +129,12 @@ div#eq .priceCard .border-bottom {
 div#eq .priceCard .carte
 {
 	background-color: rgba(0, 0, 0, 0.0);
-	padding: 0 50px 20px 50px;
+	padding: 0 30px 20px 30px;
 	border-top: #F27000 solid 2px; 
 	border-left: #F27000 solid 2px;
 	border-right: #F27000 solid 2px;
 	border-bottom: none;
+	min-height: 340px;
 }
 
 @media screen and (max-width: 40em) {
@@ -147,8 +148,8 @@ div#eq .priceCard .text
 {
 	color: white;
 	font-size: 16px;
-	min-height: 125px;
 	line-height: 1.6;
+	margin-bottom: 30px;
 }
 
 div#eq .priceCard .amount
@@ -181,6 +182,7 @@ div#eq .priceCard .btn-card
 div#eq .priceCard .btn_eq {
 	margin-top: 40px;
 	margin-bottom: 40px;
+	max-width: 250px;
 }
 
 #impots {
@@ -335,6 +337,10 @@ div#eq .priceCard .btn_eq {
 	top: 45%;
 	left: -20px;
 	width: 50px;
+}
+
+#slide1-don, #slide2-don, #slide3-don {
+	max-width: 250px;
 }
 
 header #dome {

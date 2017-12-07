@@ -104,10 +104,6 @@ var slide3Mob = '<div id="slider3Mobile"><img id="logo-header-mobile" src="https
 var nbSlideMob = 1;
 
 function transitionMob() {
-	console.log("timerMob =");
-	console.log(timerMob);
-	console.log("NbSlideMob =");
-	console.log(nbSlideMob);
 	if (timerMob >= 10) {
 		if (nbSlideMob === 1) {
 			$("#slider-mobile").html(slide2Mob);
@@ -157,3 +153,20 @@ $(document).on("click", "#slide3-don-mobile", function(e) {
 	$('html, body').animate({
 		scrollTop: $('#eq').offset().top}, 1000);
 });
+
+function preload() {
+	for (i = 0; i < preload.arguments.length; i++) {
+		images[i] = new Image()
+		images[i].src = preload.arguments[i]
+	}
+}
+
+var images = new Array();
+
+preload(
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide1_mobile.jpg",
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide2_mobile.jpg",
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/slide3_mobile.jpg",
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/first-slide.jpg",
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/slide+2.jpg",
+	"https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/slide+3.jpg");
