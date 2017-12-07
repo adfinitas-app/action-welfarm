@@ -181,8 +181,24 @@ div#eq .priceCard .btn-card
 
 div#eq .priceCard .btn_eq {
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	max-width: 250px;
+}
+
+#montant-choix {
+	margin-bottom: 40px;
+	max-width: 350px;
+}
+
+#montant-choix:hover {
+	transition: transform 0.5s;
+	transform: scale(1.05);
+}
+
+div#eq .priceCard:hover
+{
+	transition: transform 0.5s;
+	transform: scale(1.05);
 }
 
 #impots {
