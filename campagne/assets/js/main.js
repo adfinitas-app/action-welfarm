@@ -71,11 +71,6 @@ function transition() {
 };
 var timer = 0;
 
-$('#sticky').click(function(e) {
-	e.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#eq').offset().top}, 1000);
-});
 $(document).on("click", "#slide1-don", function(e) {
 	e.preventDefault();
 	$('html, body').animate({
@@ -93,10 +88,6 @@ $(document).on("click", "#slide3-don", function(e) {
 	$('html, body').animate({
 		scrollTop: $('#eq').offset().top}, 1000);
 });
-
-
-
-
 
 var slide1Mob = '<div id="slider1Mobile"><img id="logo-header-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/logo+header+mobile.png"><div id="container-mobile" class="row"><div class="columns small-10 small-offset-1 text-center end"><p id="poules-mobile">ELLES NE VERRONT LA LUMIÈRE DU JOUR<br /><b id="abattoir-mobile">QUE POUR PARTIR À L\'ABATTOIR</b></p><p id="agis-mobile">J\'agis pour l\'accès des animaux au plein air</p><a href="#part-don"><img id="slide1-don-mobile" style="padding-top: 30px;" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/btn+don+mobile.png"></a></div></div><img id="dome-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/dome+blanc+mobile.png"></div></div>'
 var slide2Mob = '<div id="slider2Mobile"><img id="logo-header-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/logo+header+mobile.png"><div id="container-mobile" class="row"><div class="columns small-10 small-offset-1 text-center end"><p id="poules-mobile">FERME À SANG<br /><b id="abattoir-mobile">AVORTÉES SANS ANESTHÉSIE POUR PRODUIRE UNE HORMONE</b></p><p id="agis-mobile">J\'agis contre les maltraitances et mutilations</p><a href="#part-don"><img id="slide2-don-mobile" style="padding-top: 30px;" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/btn+don+mobile.png"></a></div></div><img id="dome-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Noel-2017/mobile/dome+blanc+mobile.png"></div></div>'
@@ -131,11 +122,6 @@ $(document).ready(function() {
 	setInterval(transitionMob, 1000);
 });
 
-$('#sticky-mobile').click(function(e) {
-	e.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#eq').offset().top}, 1000);
-});
 $(document).on("click", "#slide1-don-mobile", function(e) {
 	e.preventDefault();
 	$('html, body').animate({
