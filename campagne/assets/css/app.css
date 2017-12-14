@@ -191,6 +191,12 @@ div#eq .priceCard .btn_eq {
 	max-width: 350px;
 }
 
+@media screen and (max-width: 40em) {
+	#montant-choix {
+	max-width: 250px;
+}
+}
+
 #montant-choix:hover {
 	transition: transform 0.5s;
 	transform: scale(1.05);
