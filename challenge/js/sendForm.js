@@ -19,12 +19,13 @@ function launchCount()
 	var url = 'https://form-to-db.herokuapp.com/count?table=welfarm_challenge';
 	var method = 'GET';
 	var xhr = new XMLHttpRequest();
-    var to_add = "";
+    var to_add = 64;
 	if ("withCredentials" in xhr) {
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				$('#nbVote').text(("00000" + xhr.responseText + to_add).slice(-5));
+				var counter = parseInt(xhr.responseText) + to_add;
+				$('#nbVote').text(("00000" + counter.to_string()).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
@@ -36,7 +37,8 @@ function launchCount()
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				$('#nbVote').text(("00000" + xhr.responseText + to_add).slice(-5));
+				var counter = parseInt(xhr.responseText) + to_add;
+				$('#nbVote').text(("00000" + counter.to_string()).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
