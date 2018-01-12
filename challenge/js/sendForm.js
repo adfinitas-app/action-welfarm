@@ -19,7 +19,7 @@ function launchCount()
 	var url = 'https://form-to-db.herokuapp.com/count?table=welfarm_challenge';
 	var method = 'GET';
 	var xhr = new XMLHttpRequest();
-    var to_add = "64";
+    var to_add = "";
 	if ("withCredentials" in xhr) {
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
