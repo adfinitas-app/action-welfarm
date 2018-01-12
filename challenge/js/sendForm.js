@@ -25,7 +25,7 @@ function launchCount()
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
 				let counter = parseInt(xhr.responseText) + to_add;
-				$('#nbVote').text(("00000" + counter.to_string()).slice(-5));
+				$('#nbVote').text(("00000" + counter.toString()).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
@@ -38,7 +38,7 @@ function launchCount()
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
 				let counter = parseInt(xhr.responseText) + to_add;
-				$('#nbVote').text(("00000" + counter.to_string()).slice(-5));
+				$('#nbVote').text(("00000" + counter.toString()).slice(-5));
 			}
 		};
 		xhr.onerror = function() {
