@@ -1,6 +1,7 @@
 /* Smooth scroll */
 var fbGlobal = new Firebase("https://viededinde-6f5e0.firebaseio.com/");
 var merciPath = "/viededinde/index.html"
+var toBeAdded = 17;
 
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
@@ -9,7 +10,7 @@ function counter(callbackFunction) {
     return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
-      $("#nb-signatures").html(snapshot.val());
+      $("#nb-signatures").html(snapshot.val() + toBeAdded);
       //alert('ok :)');
       Firebase.goOffline();
       callbackFunction();
@@ -268,7 +269,7 @@ $(document).ready(function()
 });
 
   fbGlobal.child("counter").once("value", function(snapshot) {
-    $("#nb-signatures").html(snapshot.val());
+    $("#nb-signatures").html(snapshot.val() + toBeAdded);
     Firebase.goOffline();
   });
   
