@@ -7,7 +7,7 @@ var toBeAdded = 17;
 function counter(callbackFunction) {
   Firebase.goOnline();
   fbGlobal.child('counter').transaction(function(currentValue) {
-    return (currentValue||0) + 46;
+    return (currentValue||0) + 1;
   }, function(err, committed, snapshot){
     if (committed){
       $("#nb-signatures").html(snapshot.val() + toBeAdded);
