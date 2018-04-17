@@ -1,7 +1,7 @@
 /* Smooth scroll */
 var fbGlobal = new Firebase("https://viededinde-6f5e0.firebaseio.com/");
 var merciPath = "/viededinde/index.html"
-var toBeAdded = 17;
+var toBeAdded = 63;
 
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
