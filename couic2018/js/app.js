@@ -1,7 +1,7 @@
 var fbGlobal = new Firebase("https://welfarmpetitioncount.firebaseio.com");
 merciPath = "/couic2018/merci.html"
 
-var toBeAdded = 3938 + 12;
+var toBeAdded = 3938 + 12 + 34;
 // Make sure firebase API is loaded
 function counter(callbackFunction) {
   Firebase.goOnline();
