@@ -95,6 +95,12 @@
 	margin-right: 8px;
 	margin-left: 8px;
 }
+.accroche .sign {
+	color: white;
+	line-height: 1.2;
+	font-size: 20px;
+	font-family: 'Poppins Medium', serif;
+}
 #video-container {
 	display: none;
 	position: relative;
@@ -112,6 +118,128 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+
+form .error {
+	font-family: 'Poppins Medium', serif;
+	display: none;
+	margin-bottom: 0;
+	color: black;
+	font-size: 12px;
+}
+form .hidden {
+	display: none;
+}
+form input,
+form selectk
+.intl-tel-input{
+	text-align: left;
+	font-family: 'Poppins', serif !important;
+	font-size: 20px !important;
+	padding: 10px !important;
+	height: 45px !important;
+	background-color: black !important;
+	color: white !important;
+	max-width: 80%;
+	margin: 0 auto !important;
+	margin-bottom: 5px !important;
+}
+.intl-tel-input {
+	width: 80%;
+	max-width: 100%;
+}
+#f_phone {
+	width: 100%;
+	max-width: 100%;
+	padding-left: 45px !important;
+}
+form button[type=submit] {
+	margin-top: 15px;
+}
+.red-border {
+	border:2px solid black;
+}
+form label {
+	text-align: left;
+	color: black;
+	font-size: 14px;
+	font-family: 'Poppins Medium', serif;
+}
+ {
+
+}
+.container-form {
+	background-color: white;
+	padding: 20px;
+}
+.container-form .title {
+	color: black;
+	font-weight: bold;
+}
+.container-form p.obligatoire,
+.container-form p.juridique,
+.container-form p.juridique a{
+	font-family: 'Poppins Medium', serif;
+	font-size: 12px !important;
+	line-height: 1.1 !important;
+	width: auto !important;
+	height: auto !important;
+	margin-top: 5px;
+	color: black !important;
+}
+
+.civilite-container {
+	text-align: center;
+	margin-bottom: 9px;
+	margin-top: 15px;
+}
+.civilite-container * {
+	font-family: 'Poppins Medium', serif;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 1.2;
+}
+
+.round {
+	position: relative;
+	width: 100px;
+	padding-left: 35px;
+}
+.round.margin {
+	margin-right: 35px;
+}
+.checkbox-separator {
+	width: 40px;
+}
+
+.round .box {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/check-not.png");
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	top: -4px;
+	height: 30px;
+	width: 30px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.round input[type="checkbox"] {
+	display: none;
+}
+.round input[type="checkbox"]:checked + .box {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/check.png");
+}
+.round label:hover,
+.round label:focus{
+	cursor: pointer;
+}
+.round input[type="checkbox"]:checked + .box:after {
+	opacity: 1;
+}
+
+.checkbox-round:checked {
+	background-color: red;
 }
 
 .picto-container {
@@ -327,5 +455,9 @@ footer .rs-footer p {
 
 	.rs-container .share .row:nth-child(2) img {
 		max-width: 50px;
+	}
+	form input,
+	form select {
+		width: 100% !important;
 	}
 }

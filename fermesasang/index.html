@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="fr">
 <head>
@@ -7,6 +8,9 @@
 	<title>Welfarm - Ferme à Sang</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
 	<link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/remodal-default-theme.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/remodal.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/intlTelInput.css' type='text/css'/>
 </head>
 <body>
 <header>
@@ -31,9 +35,7 @@
 				<a href="" id="yt-thumbnail">
 					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/video-thumbnail.jpg" alt="Vidéo Youtube">
 				</a>
-				<div id="video-container">
-
-				</div>
+				<div id="video-container"></div>
 
 
 				<div class="row cta">
@@ -41,12 +43,46 @@
 					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/je-decouvre-la-petition.png" alt="Je découvre la pétition">
 				</div>
 			</div>
-			<div class="small-12 large-6 columns container-form text-center">
+			<div class="small-12 large-6 columns text-center">
 				<h3 class="title"><span class="red">DITES STOP</span><br />aux fermes à sang</h3>
-				<p>Signez la pétition</p>
-				<form>
+				<p class="sign">Signez la pétition</p>
+				<div class="container-form">
+					<p class="title"><span class="red">Rejoignez les<br /><span id="nb-signatures">__</span></span> signataires !</p>
+					<form id="form" novalidate>
+						<p class="obligatoire">Les champs marqués d'un * sont obligatoires</p>
+						<p class="error error-mail">Le champ e-mail est obligatoire</p>
+						<p class="error error-firstname">Le champ prénom est obligatoire</p>
+						<p class="error error-lastname">Le champ nom est obligatoire</p>
+						<p class="error error-civility">Merci de renseigner votre civilité</p>
+						<p class="error error-mail-wrong">Le format de l'e-mail est incorrect</p>
+						<p class="error error-phone-wrong">Le format du téléphone est incorrect</p>
 
-				</form>
+
+						<input id="f_email" type="email" title="Email*" class="required" placeholder="E-mail*" required>
+						<div class="hidden">
+							<div class="civilite-container" role="group">
+								<div class="round margin">
+									<input name="civility_f" type="checkbox" id="f_female" required/>
+									<label class="box" id="box1" for="f_female"></label>
+									<label for="f_female">Madame</label>
+								</div>
+								<div class="round">
+									<input name="civility_m" type="checkbox" id="f_male" required/>
+									<label class="box"  id="box2" for="f_male"></label>
+									<label for="f_male">Monsieur</label>
+								</div>
+							</div>
+							<input id="f_lastname" type="text" title="Nom*" class="required" placeholder="Nom*" required>
+							<input id="f_firstname" type="text" title="Prénom*" class="required" placeholder="Prénom*" required>
+							<input id="f_phone" type="text" placeholder="Téléphone">
+						</div>
+
+					<button id="submit" type="submit">
+						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/je-signe.png">
+					</button>
+						<p class="juridique">En cliquant, vous acceptez de recevoir les informations de Welfarm. Pour plus d’informations concernant vos données personnelles,  <a href="#modal">cliquez ici.</a></p>
+					</form>
+				</div>
 			</div>
 		</div>
 		<img class="transition" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/rect-transition.png">
@@ -168,7 +204,26 @@
 	</div>
 </footer>
 <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBot2_FEEqJSU9oLBYrnTezOQQMZ2BGrLU",
+        authDomain: "welfarm-fermesasang.firebaseapp.com",
+        databaseURL: "https://welfarm-fermesasang.firebaseio.com",
+        projectId: "welfarm-fermesasang",
+        storageBucket: "welfarm-fermesasang.appspot.com",
+        messagingSenderId: "826147048672"
+    };
+    firebase.initializeApp(config);
+</script>
+
 <script src="assets/js/app.js" type="text/javascript"></script>
+<script src="assets/js/remodal.js" type="text/javascript"></script>
+<script src="assets/js/intlTelInput.min.js" type="text/javascript"></script>
+<script src="assets/js/data.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
 </body>
 </html>
