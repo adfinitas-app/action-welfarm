@@ -2,47 +2,32 @@
 function sendData() {
     var data = {
         "db": {
-            "schema": "cimade_petition_dublin2018",
+            "schema": "",
             "db": {
-                "civility": getCivility(),
                 "email": pureField($('#f_email').val()),
                 "phone": pureField(getPhone()),
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
+                "sexe":"",
+                "civility": getCivility(),
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "language": "fr_FR",
-                "utm_source": getUTM(),
+                "nps": ""
             }
-        },
-        "woopra": {
-            "host": "lacimade.org",			// Nom du projet dans Woopra.
-
-            /* Variables de configuration de la fiche utilisateur, préfixe : "cv_" */
-
-            "cv_email": pureField($('#f_email').val()),
-            "cv_firstname": pureField($('#f_firstname').val().toUpperCase()),
-            "cv_lastname": pureField($('#f_lastname').val().toUpperCase()),
-            "cv_name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-            "cv_civility": getCivility(),
-
-            /* Variables de l'événement, : préfixe : "ce_" */
-
-            "event": "petition_dublin2018",				// Nom de l'événement à tracker si applicable. Non préfixé.
-            "ce_email": pureField($('#f_email').val()),
-            "ce_firstname": pureField($('#f_firstname').val().toUpperCase()),
-            "ce_lastname": pureField($('#f_lastname').val().toUpperCase()),
-            "ce_name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-            "ce_utm_source": getUTM(),
-            "ce_language": "fr_FR",
         },
         "mailjet": {
             "Email": pureField($('#f_email').val()),
             "Properties": {
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
-                "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
+                "sexe":"",
                 "civility": getCivility(),
-                "language": "fr_FR",
+                "civility_dear": getCivility(),
+                "civility_long": getCivility(),
+                "personnalisation": "",
+                "personnalisation_courte": "",
+                "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
+                "language": "fr_FR"
             },
             "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.

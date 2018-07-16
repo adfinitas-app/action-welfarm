@@ -69,6 +69,10 @@ function addVote() {
 }
 
 
+$('.scoring .score a').click( function () {
+    console.log("nps : ", $(this).attr('title'));
+    $('.scoring').slideUp();
+});
 
 $('form').submit( function (e) {
     e.preventDefault();
@@ -83,6 +87,18 @@ $('form').submit( function (e) {
             });
             //addVote();
             //sendData();
+            $('.first-screen').fadeOut("slow", function () {
+                $('.second-screen').fadeIn("slow", function () {
+                    $('.scoring').slideDown();
+                    if ($(window).width() > 640) {
+                        $('.accroche').css('padding-top','240px');
+                    }
+                    else {
+                        $('.accroche').css('padding-top','285px');
+
+                    }
+                });
+            });
         }
     }
     else {
