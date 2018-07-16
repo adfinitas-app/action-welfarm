@@ -85,8 +85,8 @@ $('form').submit( function (e) {
                     $(document).scrollTop( $("header").offset().top + 1);
                 });
             });
-            //addVote();
-            //sendData();
+            addVote();
+            sendData();
             $('.first-screen').fadeOut("slow", function () {
                 $('.second-screen').fadeIn("slow", function () {
                     $('.scoring').slideDown();

@@ -8,7 +8,7 @@ function sendData() {
                 "phone": pureField(getPhone()),
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
-                "sexe":"",
+                "sexe":getSexe(),
                 "civility": getCivility(),
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "language": "fr_FR",
@@ -20,12 +20,12 @@ function sendData() {
             "Properties": {
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
-                "sexe":"",
+                "sexe":getSexe(),
                 "civility": getCivility(),
-                "civility_dear": getCivility(),
-                "civility_long": getCivility(),
-                "personnalisation": "",
-                "personnalisation_courte": "",
+                "civility_dear": getCivilityDear(),
+                "civility_long": getCivilityLong(),
+                "personnalisation": getPersonnalisation(),
+                "personnalisation_courte": getPersonnalisationCourte(),
                 "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "language": "fr_FR"
             },
@@ -33,12 +33,8 @@ function sendData() {
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
         }
     };
-    if (pureField(getPhone()) != ""){
-        data.woopra["cv_phone"] = pureField(getPhone());
-        data.woopra["ce_phone"] = pureField(getPhone());
-    }
-    //console.log(data);
-    makeCorsRequest(data);
+    console.log(data);
+    //makeCorsRequest(data);
 }
 
 /*
@@ -71,7 +67,7 @@ function createCORSRequest(method, url) {
     return xhr;
 }
 function makeCorsRequest(data) {
-    var url = 'https://adfinitas-io.herokuapp.com/api/v1/organization/adc529c9-3414-4e80-8004-b2002885ee65/webhook/3a66a987-839b-4275-8149-109503eb09e1';
+    var url = '';
     var body = JSON.stringify(data);
     var xhr = createCORSRequest('POST', url);
     if (!xhr) {
@@ -108,8 +104,8 @@ function getPersonnalisation() {
 
 function getList() {
     var data = [];
-
-    data.push("petition_dublin2018");
+    if (!$('#f_optin').is(":checked"))
+        data.push("fermes_sang");
 
     return data;
 }
@@ -120,40 +116,36 @@ function pureField(string) {
 
 
 function getOptin() {
-    if ($('#optin').is(":checked")) {
-        return "true";
+    if ($('#f_optin').is(":checked")) {
+        return "false";
     }
-    return "false";
+    return "true";
 }
 
 function getSexe() {
-    if ($('#f_female').is(":checked"))
+    if ($('#f_female').attr("checked") === "checked")
         return "Femme";
-    else {
+    else
         return 'Homme';
-    }
 }
 
 function getCivility() {
-    if ($('#f_female').is(":checked"))
+    if ($('#f_female').attr("checked") === "checked")
         return "Mme";
-    else {
+    else
         return 'M';
-    }
 }
 
 function getCivilityDear() {
-    if ($('#f_female').is(":checked"))
+    if ($('#f_female').attr("checked") === "checked")
         return "Chère";
-    else {
+    else
         return 'Cher';
-    }
 }
 
 function getCivilityLong() {
-    if ($('#f_female').is(":checked"))
+    if ($('#f_female').attr("checked") === "checked")
         return "Madame";
-    else {
+    else
         return 'Monsieur';
-    }
 }

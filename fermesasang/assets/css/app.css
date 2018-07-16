@@ -208,6 +208,16 @@ form .error {
 form .hidden {
 	display: none;
 }
+form .optin input {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 23px !important;
+}
+form .optin label {
+	width: 90%;
+	line-height: 1.1;
+	font-size: 12px;
+}
 form input,
 form selectk
 .intl-tel-input{
