@@ -55,7 +55,7 @@ $(document).ready( function () {
 });
 
 function autoPlayVideo(){
-    $("#video-container").html('<iframe id="yt-video" src="https://www.youtube.com/embed/mXDp3-nni1M?rel=0&autoplay=1" frameborder="0"></iframe>');
+    $("#video-container").html('<iframe id="yt-video" src="https://www.youtube.com/embed/e78FyME-mPg?rel=0&autoplay=1" frameborder="0"></iframe>');
 }
 
 function addVote() {
