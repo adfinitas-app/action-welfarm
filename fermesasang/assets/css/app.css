@@ -82,8 +82,8 @@ header {
 }
 .header {
 	background-color: white;
-	height: 100px;
-	padding: 15px;
+	height: 60px;
+	padding: 5px;
 	position: fixed;
 	top: 0;
 	left : 0;
@@ -92,9 +92,14 @@ header {
 }
 .header img {
 	max-height: 100%;
+	max-width: 80px;
+}
+.header .rs  img {
+	max-width: 135px !important;
 }
 .header .rs-img {
 	margin-left: 10px;
+	max-width: 35px !important;
 }
 .scoring {
 	position: fixed;
@@ -561,7 +566,7 @@ footer .rs-footer p {
 
 @media screen and (max-width: 39.9375em) {
 	.header .logo img:nth-child(1) {
-		max-width: 80px;
+		max-width: 115px;
 	}
 	.header .logo img:nth-child(2) {
 		margin-left: 20px;
