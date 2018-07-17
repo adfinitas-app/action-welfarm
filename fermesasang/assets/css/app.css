@@ -1,0 +1,637 @@
+@font-face {
+	font-family: 'Umbrage';
+	src: url('../fonts/umbrage2-webfont-webfont.woff2') format('woff2'),
+	url('../fonts/umbrage2-webfont-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins Bold';
+	src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins Medium';
+	src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/* {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+	}*/
+.bold {
+	font-weight: bold;
+}
+.max-width {
+	max-width: 75rem !important;
+	margin: 0 auto;
+}
+.title {
+	font-family: 'Umbrage', serif;
+	line-height: 1;
+	text-transform: uppercase;
+	color: white;
+	font-size: 35px;
+}
+.red {
+	color: #ed0600;
+}
+.orange {
+	color: #f19425;
+}
+.relative {
+	position: relative;
+}
+.transition {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -33px;
+	z-index: 1;
+}
+.remodal {
+	max-width: 95% !important;
+}
+#close,
+#close:before {
+	left: auto !important;
+	right: 0 !important;
+	font-size: 40px !important;
+	color: #ed0600 !important;
+}
+.petition p {
+	font-family: 'Poppins', serif;
+	font-size: 15px;
+}
+header {
+	position: relative;
+}
+.header {
+	background-color: white;
+	height: 100px;
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	left : 0;
+	width: 100%;
+	z-index: 999;
+}
+.header img {
+	max-height: 100%;
+}
+.header .rs-img {
+	margin-left: 10px;
+}
+.scoring {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	max-width: none;
+	background-color: #f29400;
+	padding: 15px 5px;
+	display: none;
+}
+.scoring .text p {
+    font-family: "Poppins bold";
+    font-size: 25px;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.scoring p.precision {
+    font-family: "Poppins bold";
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+}
+.scoring .score a {
+	font-family: "Poppins",serif;
+    font-size: 14px;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 7px 13px;
+}
+.scoring .score a:hover,
+.scoring .score a:focus{
+	background-color: #2c2925;
+	color: white;
+}
+.scoring .score a.small {
+	padding: 7px 16px;
+}
+.scoring .score a.big {
+	padding: 7px 9px;
+}
+.scoring .score p {
+    display: inline-block;
+    font-family: "poppins bold";
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+	
+}
+.scoring .score p:nth-child(1) {
+	margin-right: 10px;
+}
+.scoring .score p:nth-child(12) {
+	margin-left: 10px;
+}
+
+.accroche {
+	background-color: black;
+	padding: 150px 10px 50px;
+	position: relative;
+}
+.accroche .youtube p {
+	color: white;
+	line-height: 1.2;
+	font-size: 20px;
+	font-family: 'Poppins Medium', serif;
+}
+.accroche .youtube .cta {
+	margin-top: 10px;
+}
+.accroche .youtube .cta img {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.accroche .sign {
+	color: white;
+	line-height: 1.2;
+	font-size: 20px;
+	font-family: 'Poppins Medium', serif;
+}
+#video-container {
+	display: none;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+#video-container iframe,
+#video-container object,
+#video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+form .error {
+	font-family: 'Poppins Medium', serif;
+	display: none;
+	margin-bottom: 0;
+	color: black;
+	font-size: 12px;
+}
+form .hidden {
+	display: none;
+}
+form .optin input {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 23px !important;
+}
+form .optin label {
+	width: 90%;
+	line-height: 1.1;
+	font-size: 12px;
+}
+form input,
+form selectk
+.intl-tel-input{
+	text-align: left;
+	font-family: 'Poppins', serif !important;
+	font-size: 20px !important;
+	padding: 10px !important;
+	height: 45px !important;
+	background-color: black !important;
+	color: white !important;
+	max-width: 80%;
+	margin: 0 auto !important;
+	margin-bottom: 5px !important;
+}
+.intl-tel-input {
+	width: 80%;
+	max-width: 100%;
+}
+#f_phone {
+	width: 100%;
+	max-width: 100%;
+	padding-left: 45px !important;
+}
+form button[type=submit] {
+	margin-top: 15px;
+}
+.red-border {
+	border:2px solid black;
+}
+form label {
+	text-align: left;
+	color: black;
+	font-size: 14px;
+	font-family: 'Poppins Medium', serif;
+}
+ {
+
+}
+.container-form {
+	background-color: white;
+	padding: 20px;
+}
+.container-form .title {
+	color: black;
+	font-weight: bold;
+}
+.container-form p.obligatoire,
+.container-form p.juridique,
+.container-form p.juridique a{
+	font-family: 'Poppins Medium', serif;
+	font-size: 12px !important;
+	line-height: 1.1 !important;
+	width: auto !important;
+	height: auto !important;
+	margin-top: 5px;
+	color: black !important;
+}
+
+.civilite-container {
+	text-align: center;
+	margin-bottom: 9px;
+	margin-top: 15px;
+}
+.civilite-container * {
+	font-family: 'Poppins Medium', serif;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 1.2;
+}
+
+.round {
+	position: relative;
+	width: 100px;
+	padding-left: 35px;
+}
+.round.margin {
+	margin-right: 35px;
+}
+.checkbox-separator {
+	width: 40px;
+}
+
+.round .box {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/check-not.png");
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	top: -4px;
+	height: 30px;
+	width: 30px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.round input[type="checkbox"] {
+	display: none;
+}
+.round input[type="checkbox"]:checked + .box {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/check.png");
+}
+.round label:hover,
+.round label:focus{
+	cursor: pointer;
+}
+.round input[type="checkbox"]:checked + .box:after {
+	opacity: 1;
+}
+
+.checkbox-round:checked {
+	background-color: red;
+}
+.second-screen {
+	display: none;
+}
+.second-screen .container-title p {
+	font-family: 'Poppins Medium', serif;
+	color: white;
+	line-height: 1.2;
+	font-size: 16px;
+	margin-top: 40px;
+}
+
+.second-screen .container-don .box-don {
+	margin-top: 50px;
+	position: relative;
+	height: 390px;
+}
+.second-screen .container-don .box-don img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 10px;
+}
+.second-screen .container-don .box-don .number p {
+	font-size: 104px;
+	font-family: 'Umbrage', serif;
+	color: white;
+	line-height: 1.2;
+	display: inline-block;
+}
+.second-screen .container-don .box-don .number p.euro {
+	font-size: 45px;
+	font-family: 'Umbrage', serif;
+	color: white;
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: top;
+}
+.second-screen .container-don .box-don .other p {
+	font-size: 16px;
+	font-family: 'Poppins', serif;
+	color: white;
+	line-height: 1.2;
+}
+.second-screen .container-don .box-don .other.margin {
+	margin-top: 20px;
+}
+.second-screen .container-don .box-don .other p.deduction span {
+	font-size: 48px;
+	font-family: 'Umbrage', serif;
+	color: white;
+	line-height: 1.2;
+}
+.second-screen .container-don .box-don .other p.deduction span.euro {
+	font-size: 26px !important;
+}
+
+.picto-container {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/bg-picto.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px 10px 80px;
+	position: relative;
+}
+.picto-container p {
+	font-family: 'Poppins Medium', serif;
+	color: white;
+	line-height: 1.2;
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+.picto-container .line-picto {
+	margin-top: 60px;
+}
+.picto-container .picto p {
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-size: 16px;
+	color: white;
+	line-height: 1.4;
+}
+.picto-container .sub-text {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 14px;
+	font-family: 'Poppins', serif;
+	margin: 0;
+	text-align: left;
+}
+
+
+.map-container {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/bg-map.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 20px 10px;
+}
+.map-container .pourquoi-faire {
+	padding-top: 60px;
+}
+.map-container .pourquoi-faire p {
+	font-family: 'Poppins', serif;
+	color: white;
+	line-height: 1.1;
+	font-size: 16px;
+	margin-top: 70px;
+}
+.map-container .pourquoi-faire p span {
+	font-family: 'Poppins Medium', serif;
+	font-size: 20px;
+}
+
+.qui-achete {
+	background-color: black;
+	padding: 50px 10px;
+}
+.qui-achete p {
+	font-family: 'Poppins', serif;
+	color: white;
+	line-height: 1.2;
+	margin-top: 70px;
+	font-size: 16px;
+}
+.qui-achete p span {
+	font-family: 'Poppins Bold', serif;
+	font-size: 20px;
+}
+
+
+.rs-container {
+	background-color: #f19425;
+	padding: 70px 10px;
+}
+.rs-container .laboratoire .title {
+	color: black;
+	margin-bottom: 30px;
+	line-height: 1;
+	font-weight: bold;
+}
+.rs-container .laboratoire {
+	padding: 40px 20px;
+	background-color: white;
+	margin: 0 auto;
+	max-width: 500px;
+}
+.rs-container .laboratoire p {
+	font-family: 'Poppins Medium', serif;
+	color: black;
+	line-height: 1.3;
+	font-size: 15px;
+	margin-bottom: 40px;
+}
+.rs-container .ceva {
+	margin-bottom: 60px;
+}
+.rs-container .ceva img:nth-child(1){
+	margin-bottom: 20px;
+}
+.rs-container .share .row:nth-child(1) img{
+	margin-bottom: 20px;
+}
+.rs-container .share .row:nth-child(2) img:nth-child(1){
+	margin-right: 10px;
+}
+.rs-container .share .compte {
+	text-align: center;
+}
+
+.footer {
+	padding: 40px 10px;
+}
+footer .dec {
+	padding-top: 105px;
+}
+footer .text p,
+footer .text a{
+	font-family: 'Poppins', serif;
+	color: black;
+	line-height: 1.2;
+}
+footer .text p:nth-child(1) {
+	font-size: 14px;
+	text-align: left;
+}
+footer .text p:nth-child(2) {
+	font-size: 12px;
+	text-align: left;
+}
+footer .text p:nth-child(3) {
+	font-size: 14px;
+}
+
+footer .rs-footer p {
+	font-family: 'Poppins', serif;
+	color: black;
+	line-height: 1.2;
+	font-size: 14px;
+}
+@media screen and (max-width: 63.9375em) {
+	.picto-container {
+		background-image: none;
+		background-color: #4c4c4c;
+	}
+	.picto-container .line-picto {
+		margin: 0;
+
+	}
+	.picto-container .picto {
+		margin-top: 20px;
+	}
+	.rs-container .laboratoire {
+		margin-bottom: 40px;
+	}
+	.rs-container .ceva img:nth-child(1) {
+		display: block;
+		margin: 0 auto;
+	}
+	.rs-container .share .compte {
+		text-align: center;
+	}
+
+	footer {
+		text-align: center;
+	}
+	footer .dec {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 39.9375em) {
+	.header .logo img:nth-child(1) {
+		max-width: 80px;
+	}
+	.header .logo img:nth-child(2) {
+		margin-left: 20px;
+		max-width: 115px;
+	}
+	.header {
+		height: auto;
+		padding: 5px;
+	}
+	.header .rs .rs-img {
+		display: inline-block;
+		margin-top: 10px;
+		max-width: 40px;
+		margin-left: 5px;
+	}
+	.accroche .youtube .cta img {
+		margin-top: 10px;
+	}
+
+	.accroche .youtube {
+		margin-bottom: 20px;
+	}
+	.picto-container p {
+		font-size: 18px;
+	}
+	.picto-container .sub-text {
+		font-size: 10px;
+	}
+	.map-container .pourquoi-faire p {
+		margin-top: 30px;
+	}
+
+	.rs-container {
+		padding: 20px 10px;
+	}
+	.rs-container .laboratoire {
+		padding: 30px 10px;
+	}
+
+	.rs-container .share .row:nth-child(2) img {
+		max-width: 50px;
+	}
+	form input,
+	form select {
+		width: 100% !important;
+	}
+
+	.scoring {
+		top: 110px;
+	}
+	.scoring .text p {
+		font-size: 16px;
+		
+	}
+	.scoring p.precision {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.scoring .score p {
+		display: none;
+		font-size: 12px;
+	}
+	.scoring .score a {
+		font-size: 13px;
+		padding: 4px 7px;
+	}
+	.scoring .score a.small {
+		padding: 4px 9px;
+	}
+	.scoring .score a.big {
+		padding: 4px 6px;
+	}
+}
