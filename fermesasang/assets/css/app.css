@@ -103,7 +103,7 @@ header {
 }
 .scoring {
 	position: fixed;
-	top: 100px;
+	top: 60px;
 	left: 0;
 	z-index: 999;
 	width: 100%;
