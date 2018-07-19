@@ -141,7 +141,6 @@ $('#questionnaire .container-answer a').click( function (e) {
 
     //RECORD SCORE
     answer.push($(this).attr('title'));
-    console.log(answer);
 
     index++;
 
@@ -162,4 +161,12 @@ $('#questionnaire .container-answer a').click( function (e) {
         $('#nb-question').fadeIn(function () {
         });
     });
-});
+}).hover(
+    function() {
+        $(this).css("background-color","#96c11f");
+        $(this).css("border","2px solid #96c11f");
+    }, function() {
+        $(this).css("background-color","transparent");
+        $(this).css("border","2px solid white");
+    }
+);
