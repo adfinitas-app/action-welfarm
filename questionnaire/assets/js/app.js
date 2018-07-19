@@ -41,12 +41,11 @@ $('form').submit( function (e) {
     e.preventDefault();
     $('.error').hide();
 
-    //if (validateForm()) {
-        //sendData();
+    if (validateForm()) {
         $('#begin').fadeOut("slow", function () {
            $('#questionnaire').fadeIn();
         });
-    //}
+    }
 
 
 });
@@ -146,6 +145,7 @@ $('#questionnaire .container-answer a').click( function (e) {
 
     //CHECK END
     if (index === titleQuestions.length) {
+        sendData(answer);
         $('#questionnaire').fadeOut("slow", function () {
            $('#merci').fadeIn();
         });

@@ -85,7 +85,7 @@
 	min-height: 93vh;
 }
 .accroche .left {
-	padding: 50px 20px 20px;
+	padding: 20px 20px 20px;
 	background-color: #96c11f;
 }
 .accroche .left p {
@@ -113,7 +113,7 @@
 	padding-top: 20px;
 }
 .accroche .right {
-	padding: 50px 20px 20px;
+	padding: 20px 20px 20px;
 	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Ferme-a-sang/bg-right.jpg");
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
@@ -125,7 +125,7 @@ form .error {
 	font-family: 'Poppins Medium', serif;
 	display: none;
 	margin-bottom: 0;
-	color: black;
+	color: white;
 	font-size: 12px;
 }
 form .optin input {
@@ -144,9 +144,9 @@ form selectk
 .intl-tel-input{
 	text-align: left;
 	font-family: 'Poppins', serif !important;
-	font-size: 20px !important;
+	font-size: 16px !important;
 	padding: 10px !important;
-	height: 65px !important;
+	height: 45px !important;
 	background-color: white !important;
 	border: none;
 	color: black !important;
@@ -166,6 +166,7 @@ form selectk
 form button[type=submit] {
 	margin-top: 15px;
 	margin-bottom: 40px;
+	max-width: 300px;
 }
 .red-border {
 	border:2px solid black;
@@ -180,7 +181,7 @@ form label {
 
 }
 .container-form {
-	padding: 20px;
+	padding: 5px 20px 20px;
 }
 .container-form .title {
 	color: black;

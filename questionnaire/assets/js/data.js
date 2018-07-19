@@ -1,35 +1,24 @@
 
-function sendData() {
+function sendData(q) {
     var data = {
         "db": {
-            "schema": "",
+            "schema": "welfarm_scoring",
             "db": {
                 "email": pureField($('#f_email').val()),
                 "phone": pureField(getPhone()),
-                "firstname": pureField($('#f_firstname').val().toUpperCase()),
-                "lastname": pureField($('#f_lastname').val().toUpperCase()),
                 "sexe":getSexe(),
                 "civility": getCivility(),
+                "firstname": pureField($('#f_firstname').val().toUpperCase()),
+                "lastname": pureField($('#f_lastname').val().toUpperCase()),
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "language": "fr_FR",
+                "quest_1_militant":q[0],
+                "quest_2_accessibilite":q[1],
+                "quest_3_famille":q[2],
+                "quest_4_connaissance":q[3],
+                "quest_5_communication":q[4],
+                "nps":q[5],
             }
-        },
-        "mailjet": {
-            "Email": pureField($('#f_email').val()),
-            "Properties": {
-                "firstname": pureField($('#f_firstname').val().toUpperCase()),
-                "lastname": pureField($('#f_lastname').val().toUpperCase()),
-                "sexe":getSexe(),
-                "civility": getCivility(),
-                "civility_dear": getCivilityDear(),
-                "civility_long": getCivilityLong(),
-                "personnalisation": getPersonnalisation(),
-                "personnalisation_courte": getPersonnalisationCourte(),
-                "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-                "language": "fr_FR"
-            },
-            "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
-            "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
         }
     };
     //console.log(data);
