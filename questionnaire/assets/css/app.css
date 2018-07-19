@@ -164,8 +164,8 @@ form selectk
 	padding-left: 45px !important;
 }
 form button[type=submit] {
-	margin-top: 15px;
-	margin-bottom: 40px;
+	display: block;
+	margin: 15px auto 40px;
 	max-width: 300px;
 }
 .red-border {
