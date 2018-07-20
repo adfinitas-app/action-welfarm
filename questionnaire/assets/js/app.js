@@ -145,7 +145,6 @@ $('#questionnaire .container-answer a').click( function (e) {
 
     //CHECK END
     if (index === titleQuestions.length) {
-        console.log("HERE !!!");
         sendData(answer);
         $('#questionnaire').fadeOut("slow", function () {
            $('#merci').fadeIn();
