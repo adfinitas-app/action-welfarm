@@ -1,5 +1,6 @@
 
 function sendData(q) {
+    console.log("BEGIN");
     var data = {
         "db": {
             "schema": "welfarm_scoring",
@@ -21,7 +22,7 @@ function sendData(q) {
             }
         }
     };
-    //console.log(data);
+    console.log(data);
     makeCorsRequest(data);
 }
 
