@@ -21,7 +21,7 @@ function sendData(q) {
             }
         }
     };
-    console.log(data);
+    //console.log(data);
     makeCorsRequest(data);
 }
 
