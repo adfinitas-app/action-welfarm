@@ -12,16 +12,16 @@ function sendData(q) {
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "language": "fr_FR",
-                "quest_1_militant":q[0],
-                "quest_2_accessibilite":q[1],
-                "quest_3_famille":q[2],
-                "quest_4_connaissance":q[3],
-                "quest_5_communication":q[4],
-                "nps":q[5],
+                "quest_1_militant":q[1],
+                "quest_2_accessibilite":q[2],
+                "quest_3_famille":q[3],
+                "quest_4_connaissance":q[4],
+                "quest_5_communication":q[5],
+                "nps":q[0],
             }
         }
     };
-    console.log(data);
+    //console.log(data);
     makeCorsRequest(data);
 }
 
