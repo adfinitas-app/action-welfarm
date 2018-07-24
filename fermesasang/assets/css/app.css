@@ -608,9 +608,13 @@ footer .rs-footer p {
 	.rs-container .laboratoire {
 		padding: 30px 10px;
 	}
+	.rs-container .ceva img:nth-child(2){
+		margin-top: 20px;
+		max-width: 160px;
+	}
 
 	.rs-container .share .row:nth-child(2) img {
-		max-width: 50px;
+		max-width: 160px;
 	}
 	form input,
 	form select {
