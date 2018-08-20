@@ -265,6 +265,8 @@ form label {
 .container-form {
 	background-color: white;
 	padding: 20px;
+	max-width: 90%;
+	margin: 0 auto;
 }
 .container-form .title {
 	color: black;
@@ -329,6 +331,33 @@ form label {
 }
 .round input[type="checkbox"]:checked + .box:after {
 	opacity: 1;
+}
+
+.container-agis {
+	position: relative;
+	padding: 50px 15px 50px 15px;
+	margin-top: 40px;
+	background-color: #f19425;
+}
+.container-agis p {
+	position: relative;
+	color: white;
+	font-size: 14px;
+	font-family: "Poppins Medium", serif;
+	margin-bottom: 15px;
+	line-height: 1.1;
+}
+.container-agis .absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.container-agis .action {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 .checkbox-round:checked {

@@ -26,6 +26,9 @@ $('#box2, #box2 + label').click( function () {
     $('#f_male').attr('checked', "checked");
 });
 
+$('#agis').click(function () {
+    scrollToNext($('.rs-container'));
+});
 
 $(document).ready( function () {
     $("#f_phone").intlTelInput({
@@ -200,4 +203,11 @@ function extractUrlParams(){
         f[x[0]]=decodeURIComponent(x[1]);
     }
     return f;
+}
+
+
+function 	scrollToNext(next){
+    $('html, body').stop().animate({
+        scrollTop: $(next).offset().top - $('.sub.nav').height()
+    }, 700, 'swing');
 }
