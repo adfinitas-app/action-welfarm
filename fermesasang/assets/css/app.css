@@ -528,8 +528,9 @@ form label {
 .rs-container .share .row:nth-child(2) img:nth-child(1){
 	margin-right: 10px;
 }
-.rs-container .share .compte {
-	text-align: center;
+.rs-container .share .compte img {
+	margin-top: 5px;
+	margin-right: 16px;
 }
 
 .footer {
