@@ -40,6 +40,7 @@ $(document).ready( function () {
 
     CountRef.once('value', function(snapshot) {
         $('#nb-signatures').html(snapshot.val());
+        console.log(snapshot.val());
     });
 
     fillFieldsFromUrl();
