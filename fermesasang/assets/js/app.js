@@ -39,8 +39,7 @@ $(document).ready( function () {
     var CountRef = firebase.database().ref('count');
 
     CountRef.once('value', function(snapshot) {
-        $('#nb-signatures').html(snapshot.val());
-        console.log(snapshot.val());
+        $('#nb-signatures').html(snapshot.val() + 42);
     });
 
     fillFieldsFromUrl();
