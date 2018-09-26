@@ -507,7 +507,28 @@ form label {
 	padding: 40px 20px;
 	background-color: white;
 	margin: 0 auto;
+	max-width: 700px;
+}
+
+.rs-container .hipraTitle {
+	padding: 30px 20px;
+	background-color: white;
+	max-width: 900px;
+	margin: auto auto 50px auto;
+}
+
+.hipraTitle h2 {
+	font-family: 'Poppins Medium', serif;
+	font-size: 20px;
+}
+
+#buttonContainer {
+	padding-top: 30px;
 	max-width: 500px;
+}
+
+#buttonContainer .columns {
+	padding-bottom: 20px;
 }
 .rs-container .laboratoire p {
 	font-family: 'Poppins Medium', serif;
