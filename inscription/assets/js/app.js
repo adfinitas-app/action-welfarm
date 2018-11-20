@@ -226,7 +226,7 @@ function submitForm(mode) {
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
         "language": pureField($("input[name='language']").val())
       },
-      "addLists": [],
+      "addLists": ["optin_site"],
       "delLists": []
     },
     "grecaptcha_response": grecaptcha.getResponse()
