@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" target="_blank" href="assets/css/foundation.css">
+    <link rel="stylesheet" target="_blank" href="assets/css/app.css">
+    <link rel="stylesheet" target="_blank" href="assets/css/utils.css">
+    <link target="_blank" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link target="_blank" href="https://fonts.googleapis.com/css?family=Kalam|Oswald:300,400|Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" target="_blank" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5ZGHT4Q');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZGHT4Q"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="headerLarge" class="show-for-medium">
+    <div class="container">
+        <video autoplay muted loop class="video">
+            <source src="assets/videos/welfarm.compressed.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="grid-x">
+                <div class="cell medium-6 logo">
+                    <a target="_blank" href="https://welfarm.fr/">
+                        <img src="assets/imgs/logoWelfarm.png" alt="logo Welfarm">
+                    </a>
+                </div>
+                <div class="cell medium-6">
+                    <a target="_blank" href="https://donner.welfarm.fr/b?cid=35&amount=7000">
+                        <button class="button oswald float-right text-center fw600 fs22 orangeBG">
+                            <i class="fas fa-heart whiteColor left"></i>
+                            JE FAIS UN DON
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-x titleContainer">
+                <div class="cell large-12">
+                    <h1 class="whiteColor fs48 fw300 oswald text-center" style="text-shadow: 10px 10px 100px #000">PARCE QUE LE BIEN-ÊTRE ANIMAL EST
+                        UN DROIT... <br>
+                        <span class="fw600">AIDEZ-NOUS À POURSUIVRE NOTRE COMBAT</span></h1>
+                </div>
+            </div>
+            <div class="grid-x scrollingArrow">
+                <div class="cell large-12" data-magellan>
+                    <a target="_blank" href="#animaux" class="menu">
+                        <img class="float-center cliquable" src="assets/imgs/arrow.png" alt="v">
+                    </a>
+                </div>
+            </div>
+            <img src="assets/imgs/herbeVerte.png" alt="" class="grass">
+        </div>
+    </div>
+</header>
+
+<header id="headerSmall" class="show-for-small-only">
+    <div class="container">
+        <div class="content grid-y grid-frame">
+            <div class="cell shrink">
+                <div class="grid-x">
+                    <div class="cell small-4 logo">
+                        <a target="_blank" href="https://welfarm.fr/">
+                            <img src="assets/imgs/logoWelfarm.png" alt="logo Welfarm">
+                        </a>
+                    </div>
+                    <div class="cell small-7">
+                        <a target="_blank" href="https://donner.welfarm.fr/b?cid=35&amount=7000">
+                            <button class="button oswald float-right text-center fw600 fs14 orangeBG">
+                                <i class="fas fa-heart whiteColor left"></i>
+                                JE FAIS UN DON
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cell auto">
+                <div class="grid-x titleContainer align-middle">
+                    <div class="cell large-12">
+                        <h1 class="whiteColor fs30 fw300 oswald text-center">PARCE QUE LE BIEN-ÊTRE ANIMAL EST UN DROIT... <br>
+                            <span class="fw600">AIDEZ-NOUS À POURSUIVRE NOTRE COMBAT</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="cell shrink">
+                <div class="grid-x scrollingArrow">
+                    <div class="cell large-12" data-magellan>
+                        <a target="_blank" href="#animaux" class="menu">
+                            <img class="float-center cliquable" src="assets/imgs/arrow.png" alt="v">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/imgs/herbeVerteSmall.png" alt="" class="grass">
+        </div>
+    </div>
+    <div id="smallStickyButton" style="display: none; z-index: 6;top: 0; left: 0; right: 0;" class="cell shrink sticky">
+        <div class="grid-x align-spaced align-middle">
+            <div class="cell small-12 text-center">
+                <a target="_blank" href="https://donner.welfarm.fr/b?cid=35&amount=7000"
+                   class="button expanded oswald hide-for-medium orangeBG" style="font-size: 1rem;">
+                    <i class="fas fa-heart whiteColor left"></i>
+                    JE FAIS UN DON
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="animaux" data-magellan-target="animaux">
+    <div class="grid-x titleContainer">
+        <div class="cell small-12 large-12 PS10" data-aos="fade-up" data-aos-duration="5000" data-aos-once="true">
+            <h2 class="fs40 yanone bold text-center whiteColor">
+                Ils ont connu l’enfer de l’élevage intensif…
+            </h2>
+            <h3 class="fs34 yanone text-center whiteColor">
+                Ils coulent aujourd’hui une vie paisible au sein de notre ferme refuge et éducative La Hardonnerie située en Meuse.
+            </h3>
+        </div>
+    </div>
+    <div class="grid-x animalContainer align-center">
+        <div class="cell">
+            <div class="grid-x animalContainer align-center">
+                <div class="cell small-12 medium-6 large-3 animal align-center">
+                    <div>
+                        <img data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true" class="float-center"
+                             src="assets/imgs/poulet.png" alt="Maryse">
+                        <div class="greenImgBG">
+                            <h5 class="kalam text-center whiteColor fs30">Maryse</h5>
+                            <p class="yanone text-center whiteColor fs17">Elle vient d’un élevage intensif de poules pondeuses en cage où elle ne
+                                connaissait que les quelques dizaines de cm² de sa cage grillagée.
+                                Maryse est arrivée dans un triste état dans notre ferme refuge La Hardonnerie&nbsp;: bec coupé, griffes trop longues,
+                                crête tombante, corps déplumé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-6 large-3 animal align-center">
+                    <div>
+                        <img data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true" class="float-center"
+                             src="assets/imgs/cochon.png" alt="Rosette">
+                        <div class="greenImgBG">
+                            <h5 class="kalam text-center whiteColor fs30">Rosette</h5>
+                            <p class="yanone text-center whiteColor fs17">
+                                Tombé d’un camion le transportant vers un centre d’engraissement et trouvé sur le parking d’un relais routier, il a
+                                été baptisé Rosette.
+                                Pris pour une femelle, c’était en réalité un porcelet mâle castré à vif sans anesthésie à l’âge de six semaines comme
+                                le sont plus de10 millions de ses congénères chaque année en France.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="grid-x animalContainer align-center">
+                <div class="cell small-12 medium-6 large-3 animal align-center">
+                    <div>
+                        <img data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true" class="float-center"
+                             src="assets/imgs/lapin.png" alt="XXX">
+                        <div class="greenImgBG">
+                            <h5 class="kalam text-center whiteColor fs30">Everest</h5>
+                            <p class="yanone text-center whiteColor fs17 fw100">
+                                Elevés pour leur chair et promis à l’abattoir, ils étaient comme près de 99&nbsp;% des lapins en France élevés en cage&nbsp;:
+                                sol grillagé,
+                                espace équivalent à une feuille A4 pour chaque individu&nbsp;: impossible de se dresser, de faire des bonds, de
+                                ronger, ou encore de se cacher.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-6 large-3 animal align-center">
+                    <div>
+                        <img data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true" class="float-center"
+                             src="assets/imgs/mouton.png" alt="XXX">
+                        <div class="greenImgBG">
+                            <h5 class="kalam text-center whiteColor fs30">Tomi</h5>
+                            <p class="yanone text-center whiteColor fs17">
+                                Saisis sur des sites d’abattage illégaux ces moutons allaient être égorgés à vif, ils vivaient enfermés depuis des
+                                semaines dans
+                                un garage sans lumière, et avaient passé toute la nuit ligotés comme en témoignaient les cicatrices visibles sur leurs
+                                pattes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="incitation">
+    <div class="container">
+        <div class="grid-x herbe">
+            <div class="cell">
+                <img src="assets/imgs/herbeVacheBGHaut.png" alt="">
+            </div>
+        </div>
+        <div class="grid-x textContainer align-center">
+            <div class="cell" data-magellan>
+                <h5 data-aos="fade-up" data-aos-duration="5000" data-aos-once="true" class="yanone text-center fs34-28 whiteColor">
+                    Mutilations, conditions de transport infernales, maltraitances, claustration, maladies, <br class="show-for-large">
+                    élimination par broyage dès la naissance
+                </h5>
+                <h5 data-aos="fade-up" data-aos-duration="5000" data-aos-once="true" class="yanone text-center fs34-28 whiteColor">
+                    <span class="bold">Plus d’1 milliard d’animaux sont élevés et abattus</span> chaque année en France<br class="show-for-large">
+                    La majorité d’entre eux subissent ces traitements cruels
+                </h5>
+                <h5 data-aos="fade-up" data-aos-duration="5000" data-aos-once="true" class="yanone text-center fs34-28 whiteColor">
+                    <span class="bold fs40-32">Aidez-nous à améliorer leur vie</span>
+                </h5>
+                <h5 data-aos="fade-up" data-aos-duration="5000" data-aos-once="true" class="yanone text-center fs34-28 whiteColor">
+                    <span class="yellowColor bold fs46-34">JE SOUTIENS WELFARM</span>
+                </h5>
+                <a target="_blank" href="#don">
+                    <img data-aos="fade-up" data-aos-duration="5000" data-aos-once="true" class="float-center" src="assets/imgs/yellowArrow.png"
+                         alt="v">
+                </a>
+
+            </div>
+        </div>
+        <div class="grid-x herbe">
+            <div class="cell">
+                <img src="assets/imgs/herbeVacheBGBas.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="don" data-magellan-target="don">
+    <div class="grid-x greenBG">
+        <div class="cell">
+            <div class="grid-x titleContainer">
+                <div class="cell">
+                    <h5 class="lightYellowColor fs50 yanone bold text-center">
+                        LES ANIMAUX D’ÉLEVAGE ONT BESOIN DE VOUS
+                    </h5>
+                </div>
+            </div>
+            <div class="grid-x equivContainer align-center">
+                <div class="cell small-10 medium-6 large-4 equiv align-center">
+                    <a target="_blank" href="https://donner.welfarm.fr/b?cid=35&amount=7000">
+                        <div class="grid-y grid-frame">
+                            <div class="cell shrink montant">
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <p class="fs24 blackColor text-center yanone">
+                                            <span class="bold fs70">70&nbsp;€</span>
+                                            <br>
+                                            Je finance l'impression et la diffusion de documents destinés à
+                                            sensibiliser le grand public au bien-être animal
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell auto"></div>
+                            <div class="cell shrink deduc">
+                                <div class="grid-x">
+                                    <div class="cell shrink small-offset-1">
+                                        <img class="float-center" src="assets/imgs/arrowBtnDon.png" alt="">
+                                    </div>
+                                    <div class="cell auto">
+                                        <p class="text-center blackColor bold yanone fs30">
+                                            Soit <span class="fs60">23,40€</span>
+                                            <br>
+                                            après déduction fiscale
+                                        </p>
+                                    </div>
+                                    <div class="cell small-1"></div>
+                                </div>
+                            </div>
+                            <div class="cell shrink">
+                                <div class="grid-x align-center">
+                                    <div class="cell small-8">
+                                        <img src="assets/imgs/btnDon.png" alt="Je fais un don">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell small-10 medium-6 large-4 equiv align-center">
+                    <a target="_blank" href="https://donner.welfarm.fr/b?cid=35&amount=14000">
+                        <div class="grid-y grid-frame">
+                            <div class="cell shrink montant">
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <p class="fs24 blackColor text-center yanone">
+                                            <span class="bold fs70">140&nbsp;€</span>
+                                            <br>
+                                            Je participe à une campagne d'affichage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell auto"></div>
+                            <div class="cell shrink deduc">
+                                <div class="grid-x">
+                                    <div class="cell shrink small-offset-1">
+                                        <img class="float-center" src="assets/imgs/arrowBtnDon.png" alt="">
+                                    </div>
+                                    <div class="cell auto">
+                                        <p class="text-center blackColor bold yanone fs30">
+                                            Soit <span class="fs60">47,60€</span>
+                                            <br>
+                                            après déduction fiscale
+                                        </p>
+                                    </div>
+                                    <div class="cell small-1"></div>
+                                </div>
+                            </div>
+                            <div class="cell shrink">
+                                <div class="grid-x align-center">
+                                    <div class="cell small-8">
+                                        <img src="assets/imgs/btnDon.png" alt="Je fais un don">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-x buttonContainer align-center">
+                <div class="cell align-center">
+                    <a target="_blank" href="https://donner.welfarm.fr/b?cid=35">
+                        <img src="assets/imgs/btnJeChoisiLeMontant.png" alt="Je choisi le montant" class=" float-center buttonMontant">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x vacheBG">
+        <div class="grid-x herbe">
+            <div class="cell">
+                <img src="assets/imgs/herbeVacheBGClairHaut.png" alt="">
+            </div>
+        </div>
+        <div class="cell small-12 medium-10 medium-offset-1 large-8 large-offset-2 align-center accordionContainer">
+            <div class="grid-x">
+                <div class="cell">
+                    <ul class="accordion" data-accordion data-allow-all-closed="true">
+                        <li class="accordion-item is-active" data-accordion-item>
+                            <a target="_blank" href="#" class="accordion-title yanone fs46-34">WELFARM EN CHIFFRES
+                                <img class="float-right" src="assets/imgs/plus.png" alt="+">
+                                <img src="assets/imgs/dropdownMenuLine.png" alt="" class="inline"></a>
+                            <div class="accordion-content" data-tab-content>
+                                <ul class="whiteColor fs30 yanone">
+                                    <li>
+                                        une équipe de 28 salariés
+                                    </li>
+                                    <li>
+                                        un réseau de 150 bénévoles
+                                    </li>
+                                    <li>
+                                        plus de 500 animaux sauvés et accueillis dans notre ferme refuge et éducative
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a target="_blank" href="#" class="accordion-title yanone fs46-34">DE NOMBREUSES VICTOIRES SUITE À NOS ACTIONS
+                                <img class="float-right" src="assets/imgs/plus.png" alt="+">
+                                <img src="assets/imgs/dropdownMenuLine.png" alt="" class="inline"></a></a>
+                            <div class="accordion-content" data-tab-content>
+                                <ul class="whiteColor fs30 yanone">
+                                    <li>
+                                        1997 : protocole annexé au traité de Maastricht définissant les animaux comme des êtres sensibles.
+                                    </li>
+                                    <li>
+                                        2007 : interdiction de l’élevage des veaux en box individuels. Une suite heureuse au combat mené depuis 1994.
+                                    </li>
+                                    <li>
+                                        2011 : création de notre ferme refuge et éducative, La Hardonnerie. WELFARM a sauvé plus de 500 animaux de
+                                        ferme. Aujourd’hui, plus de 200 d’entre eux profitent d’une retraite paisible et de soins adaptés, dans un
+                                        cadre idéal.
+                                    </li>
+                                    <li>
+                                        2012 : interdiction des cages en batterie conventionnelles pour les poules pondeuses.
+                                    </li>
+                                    <li>
+                                        2013 : interdiction de l’élevage des truies dans des stalles individuelles durant la plus grande partie de
+                                        leur gestation. Un combat mené depuis 1998.
+                                    </li>
+                                    <li>
+                                        2016 : Intégration du bien-être animal dans le code des marchés publics
+                                    </li>
+                                    <li>
+                                        2018 : le laboratoire CEVA renonce à s’approvisionner en hormone eCG provenant des fermes à sang d’Amérique du
+                                        Sud.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x yellowBG">
+        <div class="cell small-12 large-8 large-offset-2">
+            <p class="fs28 blackColor yanone text-center PS10">
+                Prélèvement à la source&nbsp;: Tous vos dons réalisés en 2018 continueront d’ouvrir droit à la même réduction d’impôt de 66&nbsp;%.
+                Rien ne change pour vos dons effectués en 2018. Ils restent déductibles de vos impôts dans les mêmes conditions et les avantages fiscaux liés aux dons sont maintenus
+                <br class="show-for-medium">
+                POUR RÉDUIRE VOTRE IMPOT SUR LE REVENU, FAITES UN DON AVANT LE 31 DÉCEMBRE 2018 !
+            </p>
+        </div>
+        <img src="assets/imgs/herbe.png" alt=""/>
+    </div>
+</section>
+
+<footer id="footerLarge" class="show-for-medium">
+    <div class="grid-x align-center-middle social">
+        <div class="cell medium-auto">
+            <p class="yanone fs34-28 text-right small-text-center">
+                PARTAGEZ /
+                <span class="greenColor">AGISSEZ
+                </span>
+                <a target="_blank" href="https://www.facebook.com/share.php?u=TODO">
+                    <img class="inline MS10-large s80-40" src="assets/imgs/fb.png" alt="Facebook">
+                </a>
+                <a target="_blank" href="https://twitter.com/share?url=TODO">
+                    <img class="inline s80-40" src="assets/imgs/tt.png" alt="Twitter">
+                </a>
+            </p>
+        </div>
+        <div class="cell medium-shrink">
+            <img src="assets/imgs/verticalHR.png" alt="|" class="float-center">
+        </div>
+        <div class="cell medium-auto align-middle">
+            <div class="grid-x align-middle">
+                <div class="cell medium-12 large-2">
+                    <img src="assets/imgs/logoDEC.png" alt="Don en Confiance" class="s80-40 float-center">
+                </div>
+                <div class="cell medium-12 large-7">
+                    <p class="blackColor fs18 yanone small-text-center">
+                        Association française indépendante, WELFARM est financée uniquement par la générosité publique.
+                        L’association bénéficie du label Don en confiance. Sa mission est reconnue d’utilité publique.
+                    </p>
+                </div>
+                <div class="cell large-2 show-for-large-only">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x mail align-middle">
+        <div class="cell medium-12">
+            <a target="_blank" href="https://action.welfarm.fr/inscription">
+                <p class="text-center fs40-32 blackColor yanone">
+                    RESTEZ <span class="greenColor"> INFORMÉ</span> DE NOS ACTIONS
+                    <img src="assets/imgs/mail.png" alt="lettre" class="s80-40 inline MS10">
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="grid-x align-center hr">
+        <div class="cell medium-10">
+            <hr>
+        </div>
+    </div>
+    <div class="grid-x align-center infos">
+        <div class="cell small-11 medium-9">
+            <p class="fs20 text-center oswald">
+                Depuis 1994, Welfarm agit pour améliorer le bien-être des animaux d’élevage à toutes les étapes de leur vie (élevage, transport,
+                abattage).<br><br>
+                <span class="bold">Agir avec Welfarm, c’est&nbsp;:</span><br>
+                - Lutter contre l’élevage intensif et ses dérives <br>
+                - Contribuer à l’amélioration des conditions de vie des animaux<br>
+                - Participer à l’émergence d’une société où l’animal est respecté pour sa valeur intrinsèque
+            </p>
+        </div>
+    </div>
+    <div class="grid-x align-center nav">
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/">
+                <p class="fs22 greenColor text-center">
+                    WELFARM.FR
+                </p>
+            </a>
+        </div>
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/mentions-legales">
+                <p class="fs22 greenColor text-center">
+                    MENTIONS LÉGALES
+                </p>
+            </a>
+        </div>
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/contacter-welfarm">
+                <p class="fs22 greenColor text-center">
+                    CONTACT
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="grid-x align-center logo">
+        <div class="cell">
+            <a target="_blank" href="https://welfarm.fr/">
+                <img class="float-center" src="assets/imgs/logoWelfarmFooter.png" alt="Logo WELFARM">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<footer id="footerSmall" class="show-for-small-only">
+    <div class="grid-x align-center social">
+        <div class="cell small-12">
+            <div class="grid-x align-center reseaux">
+                <div class="cell small-12">
+                    <p class="yanone fs30 text-center">
+                        PARTAGEZ /
+                        <span class="greenColor">
+                            AGISSEZ
+                        </span>
+                    </p>
+                </div>
+                <div class="small-12 cell text-center">
+                    <a target="_blank" href="https://www.facebook.com/share.php?u=TODO">
+                        <img class="inline s80-40" src="assets/imgs/fb.png" alt="Facebook">
+                    </a>
+                    <a target="_blank" href="https://twitter.com/share?url=TODO">
+                        <img class="inline s80-40" src="assets/imgs/tt.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="grid-x align-center DEC">
+                <div class="small-12 cell text-center">
+                    <img class="inline s80-40" src="assets/imgs/logoDEC.png" alt="Facebook">
+                </div>
+                <div class="cell small-8">
+                    <p class="yanone fs16 text-center">
+                        Association française indépendante, WELFARM est financée uniquement par la générosité publique.
+                        L’association bénéficie du label Don en confiance. Sa mission est reconnue d’utilité publique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x mail align-middle">
+        <div class="small-12 cell">
+            <a target="_blank" href="https://action.welfarm.fr/inscription">
+                <p class="fs32 blackColor text-center bold yanone">
+                    RESTEZ <span class="greenColor">INFORMÉ</span> DE NOS ACTIONS
+                </p>
+            </a>
+        </div>
+        <div class="cell small-12 align-center">
+            <a target="_blank" href="https://action.welfarm.fr/inscription">
+                <img src="assets/imgs/mail.png" alt="mail" class="s80-40 float-center">
+            </a>
+        </div>
+    </div>
+    <div class="grid-x align-center hr">
+        <div class="cell small-10">
+            <hr>
+        </div>
+    </div>
+    <div class="grid-x align-center infos">
+        <div class="cell small-12">
+            <p class="fs16 text-center oswald">
+                Depuis 1994, Welfarm agit pour améliorer le bien-être des animaux d’élevage à toutes les étapes de leur vie (élevage, transport,
+                abattage).<br><br>
+                <span class="bold">Agir avec Welfarm, c’est&nbsp;:</span><br>
+                - Lutter contre l’élevage intensif et ses dérives <br>
+                - Contribuer à l’amélioration des conditions de vie des animaux<br>
+                - Participer à l’émergence d’une société où l’animal est respecté pour sa valeur intrinsèque
+            </p>
+        </div>
+    </div>
+    <div class="grid-x align-center nav">
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/">
+                <p class="fs18 greenColor text-center yanone">
+                    WELFARM.FR
+                </p>
+            </a>
+        </div>
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/mentions-legales">
+                <p class="fs18 greenColor text-center yanone">
+                    MENTIONS LÉGALES
+                </p>
+            </a>
+        </div>
+        <div class="cell shrink">
+            <a target="_blank" href="https://welfarm.fr/contacter-welfar">
+                <p class="fs18 greenColor text-center yanone">
+                    CONTACT
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="grid-x align-center logo">
+        <div class="cell">
+            <a target="_blank" href="https://welfarm.fr/">
+                <img class="float-center" src="assets/imgs/logoWelfarmFooter.png" alt="Logo WELFARM">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/vendor/what-input.js"></script>
+<script src="assets/js/vendor/foundation.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
