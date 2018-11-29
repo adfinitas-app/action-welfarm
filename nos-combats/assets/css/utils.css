@@ -1,0 +1,218 @@
+.fs10 {
+    font-size: 0.625rem;
+}
+.fs12 {
+    font-size: 0.75rem;
+}
+.fs14 {
+    font-size: 0.875rem;
+}
+.fs16 {
+    font-size: 1rem;
+}
+.fs17 {
+    font-size: 1.063rem;
+}
+.fs18 {
+    font-size: 1.125rem;
+}
+.fs20 {
+    font-size: 1.25rem;
+}
+.fs22 {
+    font-size: 1.375rem;
+}
+.fs24 {
+    font-size: 1.5rem;
+}
+.fs26 {
+    font-size: 1.625rem;
+}
+.fs28 {
+    font-size: 1.75rem;
+}
+.fs30 {
+    font-size: 1.875rem;
+}
+.fs32 {
+    font-size: 2rem;
+}
+.fs34 {
+    font-size: 2.125rem;
+}
+.fs36 {
+    font-size: 2.25rem;
+}
+.fs38 {
+    font-size: 2.375rem;
+}
+.fs40 {
+    font-size: 2.5rem;
+}
+.fs48 {
+    font-size: 3rem;
+}
+.fs50 {
+    font-size: 3.125rem;
+}
+.fs60 {
+    font-size: 3.75rem;
+}
+.fs70 {
+    font-size: 4.375rem;
+}
+
+@media print, screen and (min-width: 64em) {
+    .fs34-28 {
+        font-size: 2.125rem;
+    }
+    .fs46-34 {
+        font-size: 2.875rem;
+    }
+    .fs40-32 {
+        font-size: 2.5rem;
+    }
+}
+
+@media print, screen and (max-width: 64em) {
+    .fs34-28 {
+        font-size: 1.75rem;
+    }
+    .fs46-34 {
+        font-size: 2.125rem;
+    }
+    .fs40-32 {
+        font-size: 2rem;
+    }
+}
+
+.fw100 {
+    font-weight: 100;
+}
+.fw200 {
+    font-weight: 200;
+}
+.fw300 {
+    font-weight: 300;
+}
+.fw400 {
+    font-weight: 400;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+.fw700 {
+    font-weight: 700;
+}
+.fw800 {
+    font-weight: 800;
+}
+.fw900 {
+    font-weight: 900;
+}
+.bold {
+    font-weight: bold;
+}
+
+.whiteColor {
+    color: #ffffff;
+}
+
+.yellowColor {
+    color: #fadf11;
+}
+
+.lightYellowColor {
+    color: #fadf11;
+}
+
+.blackColor {
+    color: #000000;
+}
+
+.greenColor {
+    color: #99cc00;
+}
+
+.orangeBG {
+    background-color: #f29400;
+}
+
+.orangeBG:hover {
+    background-color: #D68400;
+}
+
+.greenBG {
+    background-color: #83a926;
+}
+
+.whiteBG {
+    background-color: #fff;
+}
+
+.darkGreenBG {
+    background-color: #1f2909;
+}
+
+.darkGreenBG:hover {
+    background-color: #1f2909;
+}
+.oswald {
+    font-family: Oswald, arial, sans-serif;
+}
+.yanone {
+    font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+}
+.kalam {
+    font-family: Kalam, Arial, sans-serif;
+}
+.cliquable {
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.PS10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.MS10-all {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media print, screen and (min-width: 64em) {
+    .s80-40 {
+        width: 80px;
+        height: auto;
+    }
+    .s80-60 {
+        width: 80px;
+        height: auto;
+    }
+    .MS10-large {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media print, screen and (max-width: 64em) {
+    .s80-40 {
+        width: 40px;
+        height: auto;
+    }
+    .s80-60 {
+        width: 60px;
+        height: auto;
+    }
+}

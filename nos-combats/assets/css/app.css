@@ -1,0 +1,387 @@
+/* LARGE HEADER PART */
+#headerLarge {
+    min-height: 100vh;
+    min-width: 100% !important;
+}
+
+#headerLarge .container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-width: 100% !important;
+    min-height: 100vh;
+}
+
+#headerLarge .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100% !important;
+    min-height: 100vh;
+    overflow-y: hidden;
+    z-index: -1;
+}
+#headerLarge .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#headerLarge .grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 999;
+}
+
+#headerLarge .logo {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#headerLarge button {
+    padding: 10px 40px;
+    margin: 25px;
+    color: #FFF;
+}
+
+#headerLarge .titleContainer h1 {
+    text-shadow: 10px 10px 100px #000;
+}
+
+button i.left {
+    margin-right: 10px;
+}
+
+@media print, screen and (min-width: 64em) {
+    #headerLarge .titleContainer {
+        margin-top: 200px;
+    }
+}
+
+@media print, screen and (max-width: 64em) {
+    #headerLarge .titleContainer {
+        margin-top: 100px;
+    }
+}
+
+#headerLarge .scrollingArrow {
+    position: absolute;
+    bottom: 100px;
+    min-width: 100%;
+}
+
+/* SMALL HEADER PART */
+
+#headerSmall {
+    min-height: 100vh;
+    min-width: 100% !important;
+    background: url("../imgs/headerMobile.png") no-repeat;
+    background-size: cover; !important;
+}
+
+#headerSmall .grass {
+    position: absolute;
+    min-width: 100%;
+    bottom: 0;
+}
+
+#headerSmall .container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-width: 100% !important;
+    min-height: 100vh;
+}
+
+#headerSmall button {
+    margin: 10px !important;
+    background-color: #f29400;
+    color: #FFF;
+}
+
+#headerSmall .logo {
+    margin: 10px !important;
+}
+
+#headerSmall .logo img {
+    width: 100px;
+}
+
+#headerSmall .titleContainer {
+    height: 100%;
+}
+
+#headerSmall .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#headerSmall .scrollingArrow {
+    margin-bottom: 30px;
+}
+
+#headerSmall .titleContainer h1 {
+    text-shadow: 10px 10px 100px #000;
+}
+
+/* ANIMAUX PART */
+
+#animaux {
+    background-color: #83a926;
+}
+
+#animaux .titleContainer {
+    padding-top: 40px;
+}
+
+#animaux .greenImgBG {
+    background: url("../imgs/animalsBG.png") no-repeat center;
+    padding-top: 10px;
+    height: 350px;
+}
+
+#animaux .animal .greenImgBG p {
+    margin: 0 40px;
+}
+
+#animaux .animal .greenImgBG h5 {
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+#animaux .animal {
+    width: 275px;
+    margin: auto;
+}
+
+#animaux .animal:last-child {
+    width: 275px;
+}
+
+#animaux .animalContainer img {
+    margin-bottom: -20px;
+}
+
+#animaux .animalContainer>div.cell {
+    max-width: 560px;
+}
+
+#animaux .animalContainer:first-child {
+    padding-top: 40px;
+}
+
+#animaux .animalContainer:last-child {
+    padding-bottom: 40px;
+}
+
+/* INCITATION PART */
+
+#incitation .container {
+    background-size: cover !important;
+    background: url("../imgs/vacheBG.png") no-repeat center;
+    width: 100% !important;
+    height: 100%;
+}
+
+#incitation .bg {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#incitation h5 {
+    margin-top: 80px;
+}
+
+#incitation .herbe img {
+    width: 100%;
+}
+
+/* DON PART */
+
+#don .titleContainer {
+    padding-top: 30px;
+}
+
+#don .equiv {
+    background-color: #fadf11;
+    border-radius: 20px 20px 0 20px;
+    transform: scale(1);
+    transition: all 0.5s;
+    min-height: 450px;
+    max-width: 387px;
+    margin: 15px;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+#don .montant p {
+    margin: 0 30px;
+}
+
+#don .equiv:hover {
+    transform: scale(1.075);
+    transition: all 0.5s;
+}
+
+#don .equiv img {
+    margin-bottom: 20px;
+}
+
+#don .buttonMontant {
+    max-width: 80%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+#don .buttonMontant:hover {
+    transform: scale(1.15);
+    transition:all 0.5s;
+}
+
+#don .equivContainer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#don .deduc {
+    margin-bottom: 20px;
+}
+
+#don .buttonContainer {
+    margin-top: 30px;
+}
+
+#don .vacheBG {
+    background-size: cover !important;
+    background: url("../imgs/vacheBGClair.png") no-repeat center;
+}
+
+#don .accordionContainer {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.3),  -5px 5px 20px rgba(0, 0, 0, 0.3),  5px -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#don .accordion-content {
+    background: transparent;
+    border: none;
+}
+
+#don .accordion {
+    border: none;
+    background: transparent;
+}
+
+#don .accordion ul {
+    border: none;
+    background: transparent;
+    list-style-image: url("../imgs/puce.png");
+}
+
+#don .accordion-title:before {
+    content: none;
+}
+
+#don .accordion-title {
+    color: #FFF;
+    border: none;
+}
+
+#don .accordion-title img:last-child {
+    width: 100%;
+}
+
+#don .accordion-title:hover ,#don .accordion-title:focus {
+    background: transparent;
+}
+
+#don .yellowBG {
+    background-color: #fadf11;
+    padding-top: 20px;
+}
+
+#don .yellowBG img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#don .herbe img, #don .herbe {
+    width: 100% !important;
+}
+
+/* FOOTERLARGE PART */
+
+#footerLarge .hr hr {
+    max-width: none;
+    border-color: #bfbfbf;
+    width: 100%;
+}
+
+#footerLarge .social {
+    margin: 50px 0 25px 0;
+}
+
+#footerLarge .social>div.cell {
+    margin-right: 20px;
+}
+
+#footerLarge .mail {
+    margin: 25px 0 30px 0;
+}
+
+#footerLarge .nav {
+    margin: 30px 0;
+}
+
+#footerLarge .logo {
+    margin-bottom: 30px;
+}
+
+#footerLarge .nav .cell {
+    padding: 0 20px;
+}
+
+/* FOOTERSMALL PART */
+
+#footerSmall .social {
+    margin: 30px 0 25px 0;
+}
+
+#footerSmall .mail {
+    margin: 25px 0 30px 0;
+}
+
+#footerSmall .DEC {
+    margin: 20px 0  20px 0;
+}
+
+#footerSmall .logo, #footerSmall .nav  {
+    margin-bottom: 20px;
+}
+
+#footerSmall .hr hr {
+    max-width: none;
+    border-color: #bfbfbf;
+    width: 100%;
+}
+
+#footerSmall .infos p {
+    margin: 0 10px;
+}
+
+#footerSmall .infos {
+    margin-bottom: 30px;
+}
+
+#footerSmall .nav .cell {
+    padding: 0 10px;
+}
