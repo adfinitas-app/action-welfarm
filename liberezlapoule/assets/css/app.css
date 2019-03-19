@@ -703,11 +703,16 @@ input:-moz-placeholder { /* Firefox 18- */
 	.social .left p {
 		margin-bottom: 20px;
 		margin-right: 0;
+		display: block;
 	}
 	.social .left {
 		margin-bottom: 30px;
 	}
-	.social .left img, .social .right a {
+	.social .right a {
+		display: block;
+		margin-right: 0;
+	}
+	.social .left img  {
 		margin-right: 0;
 	}
 	.social .left a:nth-child(2) {

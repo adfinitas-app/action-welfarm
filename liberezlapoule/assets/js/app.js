@@ -7,8 +7,8 @@ function preload(arrayOfImages) {
 // Usage:
 
 preload([
-    "https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/optin-unchecked.png",
-    "https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/optin-checked.png"
+    "https://s3.amazonaws.com/heroku-adfinitas-campaign/SPA-Corrida-19/optin-unchecked.png",
+    "https://s3.amazonaws.com/heroku-adfinitas-campaign/SPA-Corrida-19/optin-checked.png",
 ]);
 
 
