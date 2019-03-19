@@ -1,0 +1,734 @@
+@font-face {
+	font-family: 'YanoneKaffeesatz Bold';
+	src: url('../fonts/yanonekaffeesatz-bold-webfont.woff2') format('woff2'),
+	url('../fonts/yanonekaffeesatz-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'YanoneKaffeesatz';
+	src: url('../fonts/yanonekaffeesatz-regular-webfont.woff2') format('woff2'),
+	url('../fonts/yanonekaffeesatz-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'Museo Sans 300';
+	src: url('../fonts/museo300-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo300-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../fonts/museo500-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo500-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans 700';
+	src: url('../fonts/museo700-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo700-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/* {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+	}*/
+a, li, div, p, h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans", serif;
+}
+.bold {
+	font-weight: bold;
+}
+.max-width {
+	max-width: 75rem !important;
+	margin: 0 auto;
+}
+.title {
+	font-family: 'Umbrage', serif;
+	line-height: 1;
+	text-transform: uppercase;
+	color: white;
+	font-size: 35px;
+}
+.red {
+	color: #ed0600;
+}
+.orange {
+	color: #f19425;
+}
+.yellow {
+	color: #fabb22;
+}
+.green {
+	color: #99cc00;
+}
+.relative {
+	position: relative;
+	height: 100%;
+}
+
+
+
+.header {
+	min-height: 800px;
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/bg-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 45px;
+}
+.header .top-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.header .top-nav .bt-soutien {
+	margin-top: 20px;
+	vertical-align: middle;
+	color: white;
+	font-family: "Open Sans Condensed", serif;
+	font-size: 20px;
+	float: right;
+}
+.header .top-nav .bt-soutien img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.header .text {
+	background-color: black;
+	padding: 20px;
+}
+.header .text h1 {
+	font-family: 'Museo Sans', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fabb22;
+	font-size: 32px;
+}
+.header .text h1 span {
+	color: white;
+}
+.header .share {
+	color: white;
+	font-size: 20px;
+	line-height: 1.3;
+	display: none;
+}
+.header .share a {
+	color: #fabb22;
+	text-decoration: underline;
+}
+#merci {
+	visibility: hidden;
+}
+#merci .bt-merci a {
+	position: relative;
+	display: inline-block;
+
+	padding: 20px 20px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 350px;
+	max-width: 100%;
+	background-color: white;
+
+	vertical-align: middle;
+	color: black;
+	font-family: "Open Sans Condensed", serif;
+	font-size: 20px;
+}
+#merci .bt-merci a.yellow {
+	background-color: #fabb22;
+}
+#merci .bt-merci a img.absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#merci .bt-merci a.yellow img.absolute {
+	position: absolute;
+	top: auto;
+	left: auto;
+	bottom: 0;
+	right: 0;
+}
+.remodal-close {
+	top: 20px !important;
+	right: 20px;
+	left: auto !important;
+	position: fixed !important;
+}
+.remodal-close:before {
+	font-size: 70px !important;
+	color:#fabb22 !important;
+}
+.petition {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	z-index: 9;
+	padding: 13% 30px 30px;
+	overflow-y: scroll;
+	display: none;
+}
+.petition p {
+	color: white;
+	font-size: 20px;
+	line-height: 1.3;
+}
+.petition p.small {
+	font-size: 14px;
+	text-align: center;
+}
+#form {
+	background-color: white;
+	margin: 0 auto;
+	width: 300px;
+	max-width: 100%;
+	z-index: 999;
+}
+#form .corner {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#form .inside {
+	padding: 10px 35px 30px;
+}
+#form .hidden {
+	display: none;
+}
+#form button[type=submit], #petition-bt-small {
+	text-align: center;
+	width: 100%;
+	background-color: #fabb22;
+	color: black;
+	font-weight: bold;
+	font-family: "Open Sans Condensed", serif;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+}
+#form button[type=submit] .corner-yellow, #petition-bt-small .corner-yellow {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#form h2 {
+	font-family: "Titillium Web", serif;
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #dd1184;
+	text-align: center;
+	line-height: 1;
+}
+.intl-tel-input {
+	margin-bottom: 10px;
+	width: 100%;
+}
+#form p, #form label {
+	font-size: 11px;
+	color: #6e6e6e;
+	line-height: 1.1;
+}
+#form p a {
+	color: #6e6e6e;
+	text-decoration: underline;
+}
+#f_optin {
+	margin: 0;
+	display: none;
+}
+
+
+.checkbox {
+	margin-top: 10px;
+}
+.checkbox span {
+	width: 21px;
+	height: 21px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+	background: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/optin-unchecked.png");
+}
+
+.checkbox input:checked + span {
+	background: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/optin-checked.png");
+}
+
+.error {
+	color: red !important;
+	font-size: 12px !important;
+	margin-bottom: 3px !important;
+	line-height: 1.2 !important;
+	display: none;
+}
+.red-border {
+	border: 1px solid red;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #9d9d9d;
+	font-family: "Open Sans", serif;
+	font-weight: 500;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+	font-weight: 500;
+	color: #9d9d9d;
+	font-family: "Open Sans", serif;}
+input:-ms-input-placeholder { /* IE 10+ */
+	font-weight: 500;
+	color: #9d9d9d;
+	font-family: "Open Sans", serif;}
+input:-moz-placeholder { /* Firefox 18- */
+	font-weight: 500;
+	color: #9d9d9d;
+	font-family: "Open Sans", serif;}
+
+
+
+.gauge-container {
+	margin-top: 400px;
+	position: relative;
+	height: 200px;
+	width: 280px;
+}
+.gauge-container p {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-family: "Open Sans Condensed", serif;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	width: 135px;
+	max-width: 100%;
+
+	position: absolute;
+	top: 58px;
+	left: 72px;
+
+	display: none;
+}
+.gauge-container p span  {
+	font-size: 50px;
+}
+#gauge {
+	height: 100%;
+	width: 100%;
+}
+
+.quote-text {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f19402;
+}
+.quote-text .quote-container {
+	padding: 30px 45px 50px;
+	position: relative;
+	border-bottom: 3px solid #fabb22;
+}
+.quote-text .quote-container p {
+	font-family: 'Museo Sans', serif;
+	line-height: 1.1;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	font-size: 30px;
+}
+.quote-text .quote-container p.small {
+	font-weight: normal;
+	font-size: 20px;
+	font-style: normal;
+}
+.quote-text .quote-container .q-open {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.quote-text .quote-container .q-close {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+}
+.quote-text .text {
+	margin-top: 40px;
+	max-width: 80%;
+}
+.quote-text .text p {
+	line-height: 1.3;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.quote-text .small-ref {
+	margin-top: 40px;
+	font-weight: 300;
+	max-width: 80%;
+
+}
+.quote-text .small-ref p {
+	line-height: 1.3;
+	color: white;
+	font-size: 12px;
+}
+
+
+.infographie {
+	background-color: black;
+}
+
+#infography {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-top: 3px solid #fabb22;
+	border-bottom: 3px solid #fabb22;
+}
+#infography .inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+#infography .absolute {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+#infography p {
+	color: #fabb22;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
+#infography p.big {
+	font-family: 'Museo Sans', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 120px;
+	line-height: 0.7;
+}
+#infography p.middle {
+	text-transform: uppercase;
+	font-family: 'Museo Sans', serif;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 1;
+
+}
+#infography p.small {
+	text-transform: uppercase;
+	font-family: 'Museo Sans', serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 10px;
+
+}
+#infography .first .text {
+	position: absolute;
+	left: 160px;
+}
+#infography .first .text p:nth-child(2) {
+	margin-left: 20px;
+}
+#infography .first .text p:nth-child(3) {
+	margin-left: 30px;
+}
+#infography .first .text p:nth-child(4) {
+	margin-left: 40px;
+}
+#infography .first .text p:nth-child(5) {
+	margin-left: 50px;
+}
+
+#infography .second {
+	margin-top: 20px;
+}
+#infography .second .text {
+	margin-left: 20px;
+}
+
+
+
+.social {
+	background-color: black;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-top: 1px solid #434343;
+	border-bottom: 1px solid #434343;
+}
+.social .left {
+	border-right: 1px solid #bfbfbf;
+	margin-top: 20px;
+}
+.social .left p {
+	text-transform: uppercase;
+	font-family: 'YanoneKaffeesatz Bold', serif;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+}
+.social .left a, .social .left img,
+.social .right a, .social .right img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.social .right p {
+	font-family: 'YanoneKaffeesatz', serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	color: white;
+	font-size: 18px;
+	line-height: 1.3;
+}
+.social .informer {
+	margin-top: 30px;
+}
+.social .informer p {
+	text-transform: uppercase;
+	font-family: 'YanoneKaffeesatz Bold', serif;
+	font-size: 42px;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+}
+.social .informer a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer {
+	background-color: black;
+	padding-top: 50px;
+	border-top: 1px solid #bfbfbf;
+}
+.footer p {
+	font-family: "Oswald", serif;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.2;
+}
+.footer p span {
+	font-weight: 500;
+}
+.footer .link {
+	margin-top: 20px;
+}
+.footer .link a {
+	font-family: 'YanoneKaffeesatz', serif;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 1.2;
+}
+.footer .bottom {
+	margin-top: 20px;
+}
+.footer .bottom p, .footer .bottom a {
+	font-family: Helvetica, serif;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.2;
+}
+@media screen and (min-width: 63.9376em) {
+
+	#form {
+		position: fixed;
+	}
+}
+@media screen and (max-width: 63.9375em) {
+
+	.header {
+		background-position: 0 50%;
+		padding-top: 16%;
+		min-height: 710px;
+	}
+	#form {
+		position: relative;
+	}
+	#infography .absolute {
+		position: static;
+		float: right;
+		margin-bottom: 30px;
+		content: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/EN-FRANCE-small.png");
+	}
+	#infography p {
+		font-size: 19px;
+	}
+	#infography .third .text {
+	}
+	#infography p.small {
+		margin-top: 20px;
+	}
+
+	.social .left, .social .right {
+		text-align: center;
+		border: none;
+	}
+
+	.petition {
+		padding: 8% 30px 30px;
+	}
+	.petition p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 39.9375em) {
+	.header .top-nav {
+		padding: 0;
+	}
+	.header .form-container {
+	}
+	.header {
+		padding-top: 110px;
+		background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/Welfarm-Poules-pondeuses/bg-header-small.jpg");
+		background-position: center;
+		min-height: 100vh;
+		position: relative;
+	}
+	.header .text {
+		margin-top: 160px;
+	}
+	.header h1 {
+		font-family: "Titillium Web", serif !important;
+		text-transform: uppercase !important;
+		font-size: 48px !important;
+		color: white !important;
+		text-align: center;
+		line-height: 1;
+
+	}
+	.header .top-nav .bt-soutien {
+		margin-top: 40px;
+		margin-right: 5px;
+	}
+	#petition-bt-small {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	#merci {
+		display: none;
+		visibility: visible;
+	}
+	#merci .bt-merci a {
+		margin-top: 15px;
+	}
+
+	#form {
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		display: none;
+	}
+	#closeForm {
+		top: 5px !important;
+		right: 5px;
+		z-index: 999;
+	}
+	#form .hidden {
+		display: block;
+	}
+	#form p, #form label {
+		font-size: 11px;
+	}
+	#form button[type=submit] {
+		font-size: 22px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.gauge-container {
+		margin-top: 0;
+	}
+
+	#infography p.middle {
+		font-size: 25px;
+	}
+	#infography p.big {
+		font-size: 85px;
+	}
+	#infography p {
+		font-size: 14px;
+	}
+	#infography .second .text {
+		display: block;
+		margin-bottom: 20px;
+	}
+	#infography .third .text {
+		width: 100%;
+		text-align: right;
+	}
+	.quote-text .quote-container p {
+		font-size: 20px;
+	}
+	.quote-text .text p {
+		font-size: 16px;
+	}
+	.social .left p {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	.social .left {
+		margin-bottom: 30px;
+	}
+	.social .left img, .social .right a {
+		margin-right: 0;
+	}
+	.social .left a:nth-child(2) {
+		margin-right: 5px;
+	}
+	.social .left a:nth-child(3) {
+		margin-right: 0;
+		margin-left: 5px;
+	}
+	.social .informer p {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.social .right img {
+		max-width: 100px;
+		margin: 0 0 5px;
+	}
+	.social .right p {
+		font-size: 16px;
+	}
+	.footer p {
+		font-size: 16px;
+	}
+}
