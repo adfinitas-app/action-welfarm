@@ -132,4 +132,3 @@ function setGauge(gauge, nb) {
     }, 1500);
 }
 
-
