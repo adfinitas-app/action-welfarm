@@ -10,7 +10,6 @@ $(document).ready( function () {
     CountRef.once('value', function(snapshot) {
         $('#nb-sign').html(displayNumber(snapshot.val()));
         let gauge = new Gauge(document.getElementById('gauge')).setOptions(opts);
-
         setGauge(gauge, snapshot.val());
     });
 });

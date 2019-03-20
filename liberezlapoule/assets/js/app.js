@@ -127,8 +127,10 @@ function setGauge(gauge, nb) {
     gauge.animationSpeed = 32;
     gauge.set(nb);
 
-    setTimeout(function(){
+    $('#gauge').css('height', parseInt($('#gauge').css('height'), 10) + 50);
+    $('#gauge').css('visibility', 'visible').hide().fadeIn('slow', function () {
         $('.gauge-container p').fadeIn();
-    }, 1500);
+
+    });
 }
 
