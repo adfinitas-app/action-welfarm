@@ -24,8 +24,8 @@ function sendData() {
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
         }
     };
-    console.log(data);
-    //makeCorsRequest(data);
+    //console.log(data);
+    makeCorsRequest(data);
 }
 
 /*
