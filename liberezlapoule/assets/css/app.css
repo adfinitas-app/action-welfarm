@@ -110,6 +110,7 @@ a, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header .text {
 	background-color: black;
 	padding: 20px;
+	max-width: 370px;
 }
 .header .text h1 {
 	font-family: 'Museo Sans', serif;
@@ -149,6 +150,8 @@ a, li, div, p, h1, h2, h3, h4, h5, h6 {
 	color: black;
 	font-family: "Open Sans Condensed", serif;
 	font-size: 20px;
+
+	margin-top: 5px;
 }
 #merci .bt-merci a.yellow {
 	background-color: #fabb22;
@@ -569,7 +572,7 @@ input:-moz-placeholder { /* Firefox 18- */
 @media screen and (max-width: 63.9375em) {
 
 	.header {
-		background-position: 0 50%;
+		background-position: 50% 50%;
 		padding-top: 16%;
 		min-height: 710px;
 	}

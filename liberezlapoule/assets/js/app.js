@@ -68,6 +68,8 @@ $(document).ready( function () {
 
         $('body, html').css({margin: 0,height: '100%',overflow: 'hidden'});
         $('.petition p').focus();
+
+
         $('.petition').show();
     });
 
@@ -92,8 +94,14 @@ $(document).ready( function () {
 function HandleScrollForm() {
     if($('#form').offset().top + $('#form').height() >= $('#social').offset().top - 55)
         $('#form').css({'position':'absolute', top: $('#form').offset().top});
-    if($(document).scrollTop() + window.innerHeight < $('#social').offset().top)
-        $('#form').css({'position':'fixed', top: 120});
+    if($(document).scrollTop() + window.innerHeight < $('#social').offset().top && $(window).width() > 640) {
+        if ($(window).height() < 667) {
+            $('#form').css({'position':'fixed', top: 55});
+        }
+        else {
+            $('#form').css({'position':'fixed', top: 120});
+        }
+    }
 }
 
 
