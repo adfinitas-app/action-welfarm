@@ -236,7 +236,7 @@ a, li, div, p, h1, h2, h3, h4, h5, h6 {
 	font-family: "Titillium Web", serif;
 	text-transform: uppercase;
 	font-size: 48px;
-	color: #red;
+	color: red;
 	text-align: center;
 	line-height: 1;
 }
