@@ -1,0 +1,867 @@
+@font-face {
+	font-family: 'YanoneKaffeesatz Bold';
+	src: url('../fonts/yanonekaffeesatz-bold-webfont.woff2') format('woff2'),
+	url('../fonts/yanonekaffeesatz-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'YanoneKaffeesatz';
+	src: url('../fonts/yanonekaffeesatz-regular-webfont.woff2') format('woff2'),
+	url('../fonts/yanonekaffeesatz-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'Museo Sans 300';
+	src: url('../fonts/museo300-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo300-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../fonts/museo500-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo500-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans 700';
+	src: url('../fonts/museo700-regular-webfont.woff2') format('woff2'),
+	url('../fonts/museo700-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Young Frankenstein Rotalic';
+	src: url('../fonts/young-frankenstein-rotalic.ttf-webfont.woff2') format('woff2'),
+	url('../fonts/young-frankenstein-rotalic.ttf-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/* {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+	}*/
+a, li, div, p, h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans", serif;
+}
+body {
+	background-color: black;
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/bg-back.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 460px;
+}
+.bold {
+	font-weight: bold;
+}
+.max-width {
+	max-width: 75rem !important;
+	margin: 0 auto;
+}
+.red {
+	color: #ed0600;
+}
+.relative {
+	position: relative;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.remodal {
+	max-width: 900px !important;
+}
+
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 25px;
+}
+.bt-don {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	color: white;
+	font-family: "Open Sans Condensed", serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.bt-don:hover {
+	color: white;
+	text-decoration: underline;
+}
+.bt-don.yellow {
+	color: black;
+	background-color: #fabb22;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+.bt-don.yellow img {
+	content: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/icon-heart-black.png");
+}
+.header {
+	padding-bottom: 50px;
+}
+.header > img {
+	width: 400px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.header .text {
+	text-align: center;
+}
+.header .text h1 {
+	font-family: 'Young Frankenstein Rotalic', serif;
+	font-size: 75px;
+	color: white;
+	line-height: 0.8;
+}
+.header .text h1 span {
+	font-size: 40px;
+	color: #ef9325;
+}
+.header .text p {
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	color: #ef9325;
+	line-height: 1.2;
+}
+.header .container-bt {
+	text-align: center;
+	margin-top: 25px;
+}
+.header .container-bt a {
+	position: relative;
+	padding: 15px 55px;
+	color: #ef9325;
+	font-family: "Open Sans Condensed", serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	border: 1px solid  black;
+}
+.header .container-bt > a {
+	margin-right: 30px;
+}
+.header .container-bt a img {
+	position: absolute;
+	top: 47px;
+	right: -43px;
+	display: none;
+}
+.header .container-bt a:nth-child(1) img {
+	right: -40px;
+}
+.header .container-bt a:nth-child(2) img {
+	right: -43px;
+}
+.header .container-bt a:hover {
+	border: 1px solid  #ef9325;
+}
+.header .container-bt a:hover img {
+	display: block;
+}
+
+.accordeon {
+	margin-top: 200px;
+	border-top: 3px solid #ef9325;
+}
+.accordeon .title {
+	position: absolute;
+	top: -184px;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	margin: 0 auto;
+	width: 400px;
+	max-width: 100%;
+}
+
+
+.accordeon .box {
+	display: block;
+	border-bottom: 3px solid #ef9325;
+}
+.accordeon .box .visible {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 10px;
+}
+.accordeon .box .visible p {
+	font-family: 'Open Sans', serif;
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: white;
+	line-height: 1;
+	margin-bottom: 0;
+
+}
+.accordeon .box .visible p span {
+	float: right;
+}
+.accordeon .box .visible p span img {
+	-webkit-transition: all 0.5s, color 0.5s ease, border-color 5s ease;
+	-moz-transition: all 0.5s, color 0.5s ease, border-color 5s ease;
+	-ms-transition: all 0.5s, color 0.5s ease, border-color 5s ease;
+	-o-transition: all 0.5s, color 0.5s ease, border-color 5s ease;
+	transition: all 0.5s, color 0.5s ease, border-color 5s ease;
+}
+.accordeon .box.active .visible p span img {
+	transform: rotate(45deg);
+}
+.accordeon .box .hidden {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	display: none;
+}
+.accordeon .box .hidden .text {
+	padding-top: 20px;
+}
+.accordeon .box .hidden .text p.big {
+	font-family: 'Open Sans', serif;
+	font-size: 26px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 1.2;
+
+}
+.accordeon .box .hidden .text p.big.orange {
+	color: #ef9325;
+}
+.accordeon .box .hidden .text p.big.green {
+	color: #99cc00;
+}
+.accordeon .box .hidden .text p {
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: white;
+}
+
+
+
+
+
+
+.europe {
+	margin-top: 50px;
+}
+.europe .text {
+	text-align: left;
+	margin-top: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 3px solid #96bf0d;
+	border-bottom: 3px solid #96bf0d;
+}
+.europe .text .left {
+	border-right: 3px solid #96bf0d;
+}
+.europe .text .left p {
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.4;
+}
+.europe .text .left p a {
+	color: #99cc00;
+	text-decoration: underline;
+}
+.europe .text .right {
+	padding-left: 50px;
+}
+.europe .text .right p {
+	text-transform: uppercase;
+	font-family: 'Open Sans', serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+	line-height: 1.2;
+}
+.europe .text .right p.big {
+	text-transform: uppercase;
+	font-family: 'Open Sans', serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #e99223;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+
+
+.tw {
+	text-align: center;
+	margin-top: 100px;
+}
+.tw .container-box {
+	margin-top: 40px;
+}
+.tw .container-box .box.tweet {
+	border: 1px solid #2f2f2f;
+	border-radius: 20px;
+}
+.tw .container-box .box {
+	margin: 10px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 194px;
+	max-width: 46%;
+	padding: 30px;
+	position: relative;
+}
+.tw .container-box .box p {
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+	margin: 0;
+}
+.tw .container-box .box.other {
+	padding-top: 50px;
+}
+.tw .container-box .box.other p {
+	font-family: 'Open Sans', serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+}
+.tw .container-box .box.other p span {
+	color: #e99223;
+}
+.tw .container-box .box > img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
+
+
+.engager {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.engager .title {
+	font-family: 'Young Frankenstein Rotalic', serif;
+	font-size: 60px;
+	color: #99cc00;
+	line-height: 0.8;
+}
+.engager .name {
+	text-align: justify;
+	font-family: 'Open Sans', serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #99cc00;
+	line-height: 1.3;
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-top: 3px solid #96bf0d;
+	border-bottom: 3px solid #96bf0d;
+}
+.engager .name a {
+	color: #99cc00;
+}
+
+
+
+
+.more {
+	margin-top: 60px;
+}
+.more .right a {
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	padding-left: 7px;
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+}
+.more .right a.border {
+	border-top: 3px solid #96bf0d;
+	border-bottom: 3px solid #96bf0d;
+}
+.more .right a img {
+	float: right;
+}
+
+.depuis {
+	text-align: center;
+	margin-top: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+.depuis  p.big {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px !important;
+	color: #96bf0d !important;
+}
+.depuis p {
+	max-width: 63%;
+	text-align: left;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+}
+
+
+
+.agir {
+	margin-top: 40px;
+	text-align: center;
+}
+.agir .title {
+	font-family: 'Young Frankenstein Rotalic', serif;
+	font-size: 60px;
+	color: white;
+	line-height: 1;
+}
+.agir .box p {
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.4;
+	margin: 10px 0 0;
+}
+.agir .box img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+.social .informer {
+	margin-top: 30px;
+}
+.social .informer p {
+	text-transform: uppercase;
+	font-family: 'YanoneKaffeesatz Bold', serif;
+	font-size: 42px;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+}
+.social .informer a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.footer {
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+.footer .text p {
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+}
+.footer .link {
+	text-align: center;
+	padding-top: 20px;
+}
+.footer .link a {
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: white;
+	line-height: 1.2;
+}
+
+
+.end-page {
+	margin-top: 40px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.end-page p,.end-page a {
+	color: #8f8f8f;
+	font-family: 'Open Sans', serif;
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+
+.right-body {
+	padding-top: 150px;
+}
+.container-form {
+	position: fixed;
+	width: 300px;
+	max-width: 100%;
+
+}
+.container-form.small {
+	position: static !important;
+	width: auto !important;
+
+}
+.container-form .up {
+	text-align: center;
+	background-color: #f2b114;
+	padding: 20px;
+
+}
+.container-form .title {
+	color: black;
+	font-family: 'Open Sans', serif;
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.container-form form {
+}
+.container-form form .hidden {
+	display: none;
+}
+.container-form form input {
+	text-align: center;
+	border: none;
+	width: 100%;
+	border-radius: 20px;
+	font-family: 'Open Sans', serif;
+}
+.container-form form input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    black;
+}
+.container-form form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    black;
+	opacity:  1;
+}
+.container-form form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    black;
+	opacity:  1;
+}
+.container-form form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    black;
+}
+.container-form form input::-ms-input-placeholder { /* Microsoft Edge */
+	color:    black;
+}
+
+.container-form form input::placeholder { /* Most modern browsers support this now. */
+	color: black;
+}
+.container-form form .obligatoire {
+	font-family: 'Open Sans', serif;
+	font-size: 13px;
+	color: black;
+	font-weight: 500;
+	text-align: left;
+}
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox] + label
+{
+	text-align: left;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	font-family: 'Open Sans', serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1.3;
+	width: 100%;
+}
+
+input[type=checkbox]:checked + label
+{
+	display:inline-block;
+	padding: 0 0 0 0px;
+}
+
+
+.container-form form button {
+	margin-top: 20px;
+	color: black;
+	font-family: 'Open Sans Condensed', serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.container-form .social {
+	background-color: transparent;
+
+}
+.container-form .social a img {
+	margin-left: 15px;
+}
+.container-form .social a {
+	text-align: right;
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+	line-height: 1.2;
+}
+
+
+#merci {
+	display: none;
+}
+
+#merci .title {
+	text-align: center;
+}
+#merci .title h3 {
+	font-family: 'Young Frankenstein Rotalic', serif;
+	font-size: 50px;
+	line-height: 1;
+	color: #ef9325;
+	margin-bottom: 0;
+}
+#merci .title h3 span {
+	color: white;
+}
+#merci .title p {
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	color: white;
+	line-height: 1.2;
+}
+
+#merci .mosaic {
+	text-align: center;
+}
+#merci .mosaic .box.first {
+	height: 290px !important;
+}
+#merci .mosaic .box {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 360px;
+	height: 220px;
+	max-width: 100%;
+	position: relative;
+
+	background-size: cover;
+
+	 margin-top: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#merci .mosaic .box.un {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-1.png");
+}
+#merci .mosaic .box.deux {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-2.png");
+}
+#merci .mosaic .box.trois {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-3.png");
+}
+#merci .mosaic .box.quatre {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-4.png");
+}
+#merci .mosaic .box.cinq {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-5.png");
+}
+#merci .mosaic .box.six {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-6.png");
+}
+#merci .mosaic .box.sept {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-7.png");
+}
+#merci .mosaic .box.huit {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-8.png");
+}
+#merci .mosaic .box.neuf {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-9.png");
+}
+#merci .mosaic .box.dix {
+	background-image: url("https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/mosaic-10.png");
+}
+#merci .mosaic .box p {
+	text-align: left;
+	position: absolute;
+	left: 10px;
+	bottom: -13px;
+	margin-bottom: 0;
+	font-family: 'Open Sans', serif;
+	font-size: 20px;
+	color: white;
+	line-height: 1.2;
+}
+#merci .mosaic .box.last {
+	padding-top: 50px;
+	text-align: center;
+}
+#merci .mosaic .box.last p {
+	text-align: center;
+	position: static;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: 'Open Sans', serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: white;
+	line-height: 1.2;
+}
+#merci .mosaic .box.last img {
+	margin: 10px;
+}
+@media screen and (max-width: 63.9376em) {
+
+	.europe .text .left {
+		border-right: none;
+	}
+	.europe .text .right {
+		padding-left: 15px;
+	}
+	.tw .container-box .box {
+		min-height: 270px;
+	}
+	.agir .box {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 1270px) {
+	.container-form {
+		right: 5px;
+		width: 280px;
+	}
+}
+@media screen and (max-width: 39.9375em) {
+	.remodal {
+		padding: 5px !important;
+	}
+	.remodal-close {
+		top: -27px !important;
+	}
+	.logo {
+		max-width: 80px;
+	}
+	.header {padding-top: 80px}
+	.header .text h1 {
+		font-size: 36px;
+	}
+	.header .text h1 span {
+		font-size: 26px;
+	}
+	.header .text p {
+		font-size: 16px;
+	}
+	.header .container-bt a {
+		margin-top: 20px;
+		display: block;
+		border: 1px solid  #ef9325;
+	}
+	.header .container-bt a img {
+		display: block;
+		top: 49px;
+		max-width: 200px;
+		right: -38px !important;
+	}
+
+	.accordeon .box .visible p {
+		font-size: 22px;
+	}
+	.accordeon .box .hidden {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.accordeon .box .hidden .text p.big {
+		font-size: 22px;
+	}
+	.accordeon .box .hidden .text p {
+		font-size: 16px;
+	}
+	.europe .text .left p {
+		font-size: 16px;
+	}
+
+	.tw .container-box .box {
+		max-width: 100%;
+		min-height: 180px;
+	}
+
+	.engager .name {
+		text-align: left;
+	}
+
+	.more .right a {
+		font-size: 16px;
+	}
+
+	.depuis p {
+		max-width: 100%;
+	}
+
+
+	.footer .link a {
+		display: block;
+	}
+
+
+
+
+	.social .informer p {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
