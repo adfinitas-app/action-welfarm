@@ -774,8 +774,10 @@ input[type=checkbox]:checked + label
 
 
 .petition {
+	padding-top: 10%;
 	display: none;
 	width: 100%;
+	min-height: 100vh;
 	background-color: black;
 	z-index: 998;
 	position: fixed;
@@ -912,7 +914,9 @@ input[type=checkbox]:checked + label
 
 	.petition {
 		overflow-y: scroll;
+		padding-top: 0;
 		height: 100vh;
+		width: 100%;
 	}
 	.petition a {
 		position: fixed;
