@@ -1,8 +1,8 @@
 $(document).on('closed', '.remodal', function (e) {
-    $('#video').attr('src','https://www.youtube.com/embed/C5GzagA5X44');
+    $('#video').attr('src','https://www.youtube.com/embed/y7BzRfLGLiw');
 });
 $(document).on('opening', '.remodal', function () {
-    $('#video').attr('src','https://www.youtube.com/embed/C5GzagA5X44?autoplay=1');
+    $('#video').attr('src','https://www.youtube.com/embed/y7BzRfLGLiw?autoplay=1');
 
 });
 
@@ -36,11 +36,20 @@ $(window).scroll( function () {
 
 });
 
+$(window).resize( function () {
+    if ($(window).width() > 640)
+        $('.petition > div').css('width', $('#body').width());
+
+});
+
 $(document).ready( function () {
     $("#f_phone").intlTelInput({
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.13/js/utils.js",
         initialCountry: "fr"
     });
+
+    if ($(window).width() > 640)
+        $('.petition >  div').css('width', $('#body').width());
 
     if ($(window).width() > 1010)
         checkAnimation()
@@ -74,7 +83,18 @@ $(document).ready( function () {
             $(this).slideUp();
         })
         $('.bt-don').addClass('yellow');
+        scrollToNext($('body'));
     })
+
+
+    $('#openPetition').click(function (e) {
+        e.preventDefault();
+        $('.petition').show();
+    });
+    $('#closePetition').click(function (e) {
+        e.preventDefault();
+        $('.petition').hide();
+    });
 
 });
 
