@@ -6,6 +6,8 @@ $(document).on('opening', '.remodal', function () {
 
 });
 
+//var database = firebase.database();
+
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = this;
@@ -47,6 +49,14 @@ $(document).ready( function () {
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.13/js/utils.js",
         initialCountry: "fr"
     });
+
+    // var CountRef = database.ref('count');
+    //
+    // CountRef.once('value', function(snapshot) {
+    //     $('.nb-sign').each(function () {
+    //         $(this).html(snapshot.val());
+    //     });
+    // });
 
     if ($(window).width() > 640)
         $('.petition >  div').css('width', $('#body').width());
@@ -98,7 +108,15 @@ $(document).ready( function () {
 
 });
 
+function addVote() {
+    // var CountRef = database.ref('count');
+    //
+    // CountRef.once('value', function(snapshot) {
+    //     $('#nb-sign').html(snapshot.val() + 1);
+    //     database.ref('count').set(snapshot.val() + 1);
+    // });
 
+}
 
 function checkAnimation() {
     scrollTop = $(window).scrollTop();
