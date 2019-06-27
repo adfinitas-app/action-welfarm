@@ -99,9 +99,10 @@
                     <section class="row hide-for-large">
                         <div class="row container-form small">
                             <div class="small-12 columns medium-6 up">
-                                <p class="title"><span class="nb-sign">XXXXXXX</span><br />SIGNATAIRES</p>
+                                <p class="title"><span class="nb-sign">XXX</span><br />SIGNATAIRES</p>
                                 <form id="form-small">
-
+                                    <p class="error error-mail-wrong">Le format de l'email est invalide</p>
+                                    <p class="error error-phone-wrong">Le format du téléphone est invalide</p>
                                     <input type="text" name="f_email" placeholder="Votre email" required>
                                     <div class="hidden">
                                         <input type="text" name="f_name" placeholder="Prénom & Nom" required>
@@ -226,15 +227,15 @@
                         <img src="https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/tw-title.png" alt="Interpellons le gouvernement sur Twitter">
 
                         <div class="row container-box">
-                            <a class="box tweet">
+                            <a class="box tweet" target="_blank" href="https://twitter.com/intent/tweet?text=%40EmmanuelMacron%20%40Min_Agriculture%20%40dguillaume26%20quand%20interdirez-vous%20enfin%20la%20castration%20%C3%A0%20vif%20des%20porcelets%20en%20France%20%3F%20%23stopcastration">
                                 <img src="https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/tw-small.png" alt="Tweet">
                                 <p>@EmmanuelMacron @Min_Agriculture @dguillaume26 quand interdirez-vous enfin la castration à vif des porcelets en France ? #stopcastration</p>
                             </a>
-                            <a class="box tweet">
+                            <a class="box tweet" target="_blank" href="https://twitter.com/intent/tweet?text=%40EmmanuelMacron%20%40Min_Agriculture%20la%20castration%20%C3%A0%20vif%20fait%20souffrir%2010%20millions%20de%20porcelets%20par%20an.%20Le%20d%C3%A9veloppement%20d%27alternatives%20fait%20pourtant%20partie%20des%20priorit%C3%A9s%20de%20la%20Strat%C3%A9gie%20de%20la%20France%20pour%20le%20%C2%AB%20bien-%C3%AAtre%20animal%20%C2%BB%20%3A%20nous%20attendons%20des%20actes%20maintenant%20%21%20%23stopcastration">
                                 <img src="https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/tw-small.png" alt="Tweet">
                                 <p>@EmmanuelMacron @Min_Agriculture la castration à vif fait souffrir 10 millions de porcelets par an. Le développement d’alternatives fait pourtant partie des priorités de la Stratégie de la France pour le « bien-être animal » : nous attendons des actes maintenant ! #stopcastration</p>
                             </a>
-                            <a class="box tweet">
+                            <a class="box tweet" target="_blank" href="https://twitter.com/intent/tweet?text=%40dguillaume26%20o%C3%B9%20est%20pass%C3%A9e%20la%20feuille%20de%20route%20de%20sortie%20de%20la%20castration%20%C3%A0%20vif%20des%20porcelets%20promise%20en%20juillet%202018%20par%20%40StTRAVERT%2C%20votre%20pr%C3%A9d%C3%A9cesseur%20au%20%40Min_Agriculture%20%3F%2010%20millions%20de%20porcelets%20sont%20castr%C3%A9s%20%C3%A0%20vif%20en%20France%2C%20il%20est%20temps%20d%27agir%20%21%20%23stopcastration">
                                 <img src="https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/tw-small.png" alt="Tweet">
                                 <p>@dguillaume26 où est passée la feuille de route de sortie de la castration à vif des porcelets promise en juillet 2018 par @StTRAVERT, votre prédécesseur au @Min_Agriculture ? 10 millions de porcelets sont castrés à vif en France, il est temps d’agir ! #stopcastration</p>
                             </a>
@@ -304,12 +305,13 @@
 
                 <div class="container-form big">
                     <div class="up">
-                        <p class="title"><span id="nb-sign">XXXXXXX</span><br />SIGNATAIRES</p>
+                        <p class="title"><span class="nb-sign">XXX</span><br />SIGNATAIRES</p>
                         <form id="form">
-
-                            <input type="text" name="f_email" placeholder="Votre email">
+                            <p class="error error-mail-wrong">Le format de l'email est invalide</p>
+                            <p class="error error-phone-wrong">Le format du téléphone est invalide</p>
+                            <input type="text" name="f_email" placeholder="Votre email" required>
                             <div class="hidden">
-                                <input type="text" name="f_name" placeholder="Prénom & Nom">
+                                <input type="text" name="f_name" placeholder="Prénom & Nom" required>
                                 <input type="text" name="f_phone" placeholder="Téléphone*">
                                 <p class="obligatoire">*Non obligatoire</p>
 
@@ -479,13 +481,14 @@
 <section class="row expanded">
     <div class="row max-width end-page">
         <img src="https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/logo-color.png" alt="Welfarm">
-        <p>© Welfarm 2019&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;<a href="" target="_blank">Informations légales</a></p>
+        <p>© Welfarm 2019&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;<a href="https://welfarm.fr/mentions-legales" target="_blank">Informations légales</a></p>
     </div>
 </section>
 
 <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
 <script src="./assets/js/intlTelInput.min.js" type="text/javascript"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
 <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -499,9 +502,11 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
 <script src="./assets/js/app.js" type="text/javascript"></script>
+<script src="./assets/js/data.js" type="text/javascript"></script>
 <script src="./assets/js/remodal.js" type="text/javascript"></script>
 </body>
 </html>

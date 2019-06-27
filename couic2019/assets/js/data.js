@@ -1,31 +1,31 @@
 
-function sendData() {
+function sendData(el) {
     var data = {
         "db": {
-            "schema": "welfarm_poules_2019",
+            "schema": "welfarm_couic_2019",
             "db": {
-                "email": pureField($('#f_email').val()),
-                "phone": pureField(getPhone()),
-                "firstname": pureField(getFirstname().toUpperCase()),
-                "lastname": pureField(getLastname().toUpperCase()),
-                "name":  pureField($('#f_name').val()),
+                "email": pureField(el.find('input[name=f_email]').val()),
+                "phone": pureField(getPhone(el)),
+                "firstname": pureField(getFirstName(el)),
+                "lastname": pureField(getLastName(el)),
+                "name":  pureField(getFirstName(el)) + " " + pureField(getLastName(el)),
                 "language": "fr_FR",
             }
         },
         "mailjet": {
-            "Email": pureField($('#f_email').val()),
+            "Email": pureField(el.find('input[name=f_email]').val()),
             "Properties": {
-                "firstname": pureField(getFirstname().toUpperCase()),
-                "lastname": pureField(getLastname().toUpperCase()),
-                "name":  pureField($('#f_name').val()),
+                "firstname": pureField(getFirstName(el)),
+                "lastname": pureField(getLastName(el)),
+                "name":  pureField(getFirstName(el)) + " " + pureField(getLastName(el)),
                 "language": "fr_FR"
             },
             "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
         }
     };
-    //console.log(data);
-    makeCorsRequest(data);
+    console.log(data);
+    //makeCorsRequest(data);
 }
 
 /*
@@ -81,8 +81,8 @@ function getUTM() {
         return "";
 }
 
-function getPhone() {
-    return $('#f_phone').intlTelInput("getNumber");
+function getPhone(el) {
+    return el.find('input[name=f_phone]').intlTelInput("getNumber");
 }
 
 function getPersonnalisationCourte() {
@@ -93,10 +93,20 @@ function getPersonnalisation() {
     return getCivilityDear() + " " + getCivilityLong().toUpperCase() + " " + pureField($('#f_lastname').val().toUpperCase());
 }
 
+function getFirstName(el) {
+    return pureField(el.find('input[name=f_name]').val().split(' ')[0].toUpperCase())
+}
+function getLastName(el) {
+    if (el.find('input[name=f_name]').val().split(' ').length > 1)
+        return pureField(el.find('input[name=f_name]').val().split(' ')[1].toUpperCase());
+    else
+        return ""
+}
+
 function getList() {
     var data = [];
 
-    data.push('petitionpoules2019');
+    data.push('petitioncouic2019');
     return data;
 }
 
