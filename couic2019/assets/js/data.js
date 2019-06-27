@@ -27,7 +27,7 @@ function sendData(el) {
     //console.log(data);
     makeCorsRequest(data);
     
-                $.post("https://welfarm-couic-2019.herokuapp.com", {email: data.db.db.email, phone: data.db.db.phone, firstname: data.db.db.firstname, lastname: data.db.db.lastname});
+    $.post("https://welfarm-couic-2019.herokuapp.com", {email: data.db.db.email, phone: data.db.db.phone, firstname: data.db.db.firstname, lastname: data.db.db.lastname});
 }
 
 /*
