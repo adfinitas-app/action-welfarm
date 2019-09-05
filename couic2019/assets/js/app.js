@@ -1,9 +1,8 @@
-$(document).on('closed', '.remodal', function (e) {
+$(document).on('closed', '.remodal.modal-video', function (e) {
     $('#video').attr('src','https://www.youtube.com/embed/y7BzRfLGLiw');
 });
-$(document).on('opening', '.remodal', function () {
+$(document).on('opening', '.remodal.modal-video', function () {
     $('#video').attr('src','https://www.youtube.com/embed/y7BzRfLGLiw?autoplay=1');
-
 });
 
 var database = firebase.database();
@@ -20,6 +19,14 @@ preload([
     "https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/checked.png",
     "https://heroku-adfinitas-campaign.s3.amazonaws.com/welfarm/couic2019/icon-heart-black.png"
 ]);
+
+$('#signe-marques').click( function() {
+    var inst = $('[data-remodal-id=marques]').remodal();
+    inst.close();
+    $('form').find('.hidden').slideDown('slow', function() {
+        $('form').find('input').focus()
+    })
+})
 
 
 
@@ -46,10 +53,10 @@ $(window).resize( function () {
 
 $(document).ready( function () {
     $("input[name=f_phone]").each(function () {
-            $(this).intlTelInput({
-                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.13/js/utils.js",
-                initialCountry: "fr"
-            });
+        $(this).intlTelInput({
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.13/js/utils.js",
+            initialCountry: "fr"
+        });
     });
 
 
@@ -164,6 +171,75 @@ $(document).ready( function () {
     $('#closePetition').click(function (e) {
         e.preventDefault();
         $('.petition').hide();
+    });
+
+
+
+    $('.marques .box').click( function () {
+        var index = $(this).index() - 1
+        var maxWidthCSS = [
+            "440px",
+            "370px",
+            "215px",
+            "725px",
+            "380px",
+        ]
+
+        var i = 0;
+
+
+        $('.marques .box').each( function () {
+            if ($(this).index() - 1 !== index) {
+                var _this = $(this)
+                _this.find('.decorator').animate({
+                    top: "0",
+                }, 200, function() {
+                    $(this).hide()
+                });
+                _this.find('.hidden').slideUp('slow', function () {
+                    _this.removeClass('active')
+                    _this.css('z-index','2')
+                    _this.css('width',maxWidthCSS[i])
+
+                })
+
+            }
+            i++
+        });
+
+        if ($(this).hasClass('active')) {
+            var _this = $(this)
+            _this.find('.decorator').animate({
+                top: "0",
+            }, 200, function() {
+                $(this).hide()
+            });
+            _this.find('.hidden').slideUp('slow', function () {
+                _this.removeClass('active')
+                _this.css('z-index','2')
+                _this.css('width',maxWidthCSS[index])
+
+            })
+
+        }
+        else {
+            if ($(window).width <= 640)
+                $(this).addClass('active')
+            $(this).css('z-index','9999')
+            $(this).css('width','725px')
+
+            $(this).addClass('active')
+            $(this).find('.hidden').slideDown('slow', function () {
+
+            })
+
+            $(this).find('.decorator').fadeIn()
+            $(this).find('.decorator').animate({
+                top: "-27px",
+            }, 200, function() {
+            });
+
+        }
     });
 
 });

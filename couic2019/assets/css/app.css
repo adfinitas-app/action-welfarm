@@ -140,7 +140,7 @@ body {
 	font-family: 'Young Frankenstein Rotalic', serif;
 	font-size: 75px;
 	color: white;
-	line-height: 0.8;
+	line-height: 0.9;
 }
 .header .text h1 span {
 	font-size: 40px;
@@ -174,17 +174,172 @@ body {
 	right: -43px;
 	display: none;
 }
+.header .container-bt a#openMarques {
+	border: 1px solid  #ef9325;
+}
+.header .container-bt a#openMarques img {
+	display: block;
+}
 .header .container-bt a:nth-child(1) img {
 	right: -40px;
 }
 .header .container-bt a:nth-child(2) img {
 	right: -43px;
 }
+.header .container-bt a:nth-child(3) img {
+	top: 46px;
+	right: -49px;
+}
 .header .container-bt a:hover {
 	border: 1px solid  #ef9325;
 }
 .header .container-bt a:hover img {
 	display: block;
+}
+
+
+.marques {
+	background-color: black !important;
+}
+.marques .title {
+	border-bottom: 2px solid  #ef9325;
+	margin-bottom: 10px;
+}
+.marques .inner {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	border-bottom: 2px solid  #ef9325;
+}
+.marques .inner > p {
+	text-align: left;
+	color: white;
+	font-family: "Open Sans", serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.marques .inner button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 28px;
+	font-family: "Open Sans Condensed", serif;
+	color: #ef9325;
+}
+.marques .inner a.signe {
+	display: block;
+	margin: 40px auto 0;
+	width: 300px;
+	max-width: 100%;
+	background-color: #fabb22;
+	padding: 20px;
+	font-weight: bold;
+	color: black;
+	font-family: 'Open Sans Condensed', serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.marques .inner .container-label {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.marques .inner .container-marques {
+	position: relative;
+}
+.marques .inner .container-marques .good-pig {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+}
+.marques .inner .container-marques .bad-pig {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+.marques .inner .container-marques .box .decorator {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+.marques .inner .container-marques .box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 0px 0px 29px -17px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 29px -17px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 29px -17px rgba(0,0,0,0.75);
+
+}
+.marques .inner .container-marques .box:hover {
+	cursor: pointer;
+}
+
+.marques .inner .container-marques .box.active {
+	max-width: 100% !important;
+}
+
+.marques .inner .container-marques .box.active .hidden {
+	width: 725px;
+	max-width: 100%;
+}
+.marques .inner .container-marques .box img.smaller {
+	max-width: 170px;
+}
+.marques .inner .container-marques .box .hidden {
+	display: none;
+	margin-top: 30px;
+
+}
+.marques .inner .container-marques .box .hidden p{
+	color: black !important;
+	font-size: 22px;
+	line-height: 1.2;
+}
+.marques .inner .container-marques .box .hidden p a{
+	color: black !important;
+	text-decoration: underline;
+}
+.marques .inner .container-marques .box .hidden p.title{
+	color: #ef9325 !important;
+	font-style: italic;
+	font-size: 24px;
+	font-weight: bold;
+	border: none !important;
+	margin-bottom: 20px;
+}
+.marques .inner .container-marques .box.un {
+	top: 5%;
+	max-width: 440px;
+}
+.marques .inner .container-marques .box.deux {
+	top: 22%;
+	max-width: 370px;
+}
+.marques .inner .container-marques .box.trois {
+	top: 40%;
+	max-width: 215px;
+}
+.marques .inner .container-marques .box.quatre {
+	top: 60%;
+	max-width: 705px;
+}
+.marques .inner .container-marques .box.cinq {
+	top: 80%;
+	max-width: 380px;
 }
 
 .accordeon {
@@ -721,7 +876,7 @@ input[type=checkbox]:checked + label
 
 	background-size: cover;
 
-	 margin-top: 25px;
+	margin-top: 25px;
 	margin-right: 10px;
 	margin-left: 10px;
 }
@@ -948,5 +1103,28 @@ input[type=checkbox]:checked + label
 	.social .informer p {
 		margin-right: 0;
 		margin-bottom: 10px;
+	}
+	.marques .inner .container-marques .box {
+		max-width: 100% !important;
+	}
+	.marques .inner .container-marques .box.active {
+	}
+	.marques .inner .container-marques .box.trois {
+		top: 37%;
+	}
+	.marques .inner .container-marques .box.quatre {
+		top: 53%;
+	}
+	.marques .inner .container-marques .box .hidden p.title {
+		font-size: 20px;
+	}
+	.marques .inner .container-marques .box .hidden p {
+		font-size: 18px;
+	}
+	.marques .inner .container-marques .box img {
+		max-width: 130px;
+	}
+	.marques .inner .container-marques .box img.decorator {
+		display: none !important;
 	}
 }
